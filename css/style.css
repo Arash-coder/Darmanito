@@ -1,0 +1,137 @@
+/* @font-face {
+    src: url("fonts/koodak.ttf");
+    font-family: font;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: font; */
+}
+
+
+/* color: #1894FF; */
+
+
+/* background-color: #E6F3FF; */
+
+
+/* Header */
+
+.navbar,
+.lists,
+.icon-brand {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    padding: 2rem 10rem;
+    align-items: center;
+}
+
+.download-btn {
+    background-color: #E6F3FF;
+    color: #1894FF;
+    width: 155px;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.download-btn:focus {
+    outline: 0;
+}
+
+.lists {
+    list-style: none;
+}
+
+.item {
+    padding: 0rem 2rem;
+}
+
+.item-link {
+    text-decoration: none;
+    color: black;
+}
+
+.main-title {
+    direction: rtl;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.big-title {
+    font-size: 18px;
+}
+
+.small-title {
+    font-size: 15px;
+}
+
+
+/* End Header */
+
+
+/* Download-Section */
+
+.download-section {
+    padding: 4rem 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-download {
+    margin: 0 auto;
+    direction: rtl;
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.first-title {
+    color: #1894FF;
+    font-size: 40px;
+}
+
+.download-app {
+    background-color: #1894FF;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 6px;
+    width: 30%;
+    cursor: pointer;
+}
+
+.download-app:focus {
+    outline: 0;
+}
+
+.joined {
+    background-color: white;
+    border: 1px solid #1894FF;
+    color: #1894FF;
+    cursor: pointer;
+    padding: 0.6rem;
+    border-radius: 6px;
+    width: 30%;
+}
+
+.joined:focus {
+    outline: 0;
+}
+
+
+/* End Download-Section */
+
+
+/* About-Darmanito */
+
+
+/* End About-Darmanito */
