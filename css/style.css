@@ -133,5 +133,60 @@
 
 /* About-Darmanito */
 
+.about-darmanito {
+    display: flex;
+    padding: 3rem 10rem;
+    justify-content: space-between;
+}
+
+.texts {
+    direction: rtl;
+    padding-top: 5rem;
+    padding-right: 3rem;
+}
+
+.about-title {
+    border-right: 4px solid #05FEA3;
+    padding: 0.2rem;
+    border-radius: 2px;
+    color: #1894FF;
+}
+
+.explanation {
+    width: 80%;
+    line-height: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-top: 3rem;
+    justify-items: center;
+}
+
+.grid-item {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-grid {
+    padding: 1rem;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 0px 8px #7cc6e6;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-grid:focus {
+    outline: 0;
+}
+
+.title-btn {
+    padding-top: 1rem;
+}
+
 
 /* End About-Darmanito */
