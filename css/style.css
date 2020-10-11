@@ -1,192 +1,237 @@
-/* @font-face {
+    /* @font-face {
     src: url("fonts/koodak.ttf");
     font-family: font;
 } */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* font-family: font; */
-}
-
-
-/* color: #1894FF; */
-
-
-/* background-color: #E6F3FF; */
-
-
-/* Header */
-
-.navbar,
-.lists,
-.icon-brand {
-    display: flex;
-    justify-content: space-between;
-}
-
-.navbar {
-    padding: 2rem 10rem;
-    align-items: center;
-}
-
-.download-btn {
-    background-color: #E6F3FF;
-    color: #1894FF;
-    width: 155px;
-    padding: 0.6rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.download-btn:focus {
-    outline: 0;
-}
-
-.lists {
-    list-style: none;
-}
-
-.item {
-    padding: 0rem 2rem;
-}
-
-.item-link {
-    text-decoration: none;
-    color: black;
-}
-
-.main-title {
-    direction: rtl;
-    padding-right: 0.5rem;
-    padding-top: 0.5rem;
-}
-
-.big-title {
-    font-size: 18px;
-}
-
-.small-title {
-    font-size: 15px;
-}
-
-
-/* End Header */
-
-
-/* Download-Section */
-
-.download-section {
-    padding: 4rem 10rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.title-download {
-    margin: 0 auto;
-    direction: rtl;
-    width: 50%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-}
-
-.first-title {
-    color: #1894FF;
-    font-size: 40px;
-}
-
-.download-app {
-    background-color: #1894FF;
-    color: white;
-    border: none;
-    padding: 0.6rem;
-    border-radius: 6px;
-    width: 30%;
-    cursor: pointer;
-}
-
-.download-app:focus {
-    outline: 0;
-}
-
-.joined {
-    background-color: white;
-    border: 1px solid #1894FF;
-    color: #1894FF;
-    cursor: pointer;
-    padding: 0.6rem;
-    border-radius: 6px;
-    width: 30%;
-}
-
-.joined:focus {
-    outline: 0;
-}
-
-
-/* End Download-Section */
-
-
-/* About-Darmanito */
-
-.about-darmanito {
-    display: flex;
-    padding: 3rem 10rem;
-    justify-content: space-between;
-}
-
-.texts {
-    direction: rtl;
-    padding-top: 5rem;
-    padding-right: 3rem;
-}
-
-.about-title {
-    border-right: 4px solid #05FEA3;
-    padding: 0.2rem;
-    border-radius: 2px;
-    color: #1894FF;
-}
-
-.explanation {
-    width: 80%;
-    line-height: 30px;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding-top: 3rem;
-    justify-items: center;
-}
-
-.grid-item {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.btn-grid {
-    padding: 1rem;
-    background-color: white;
-    border: none;
-    box-shadow: 0px 0px 8px #7cc6e6;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.btn-grid:focus {
-    outline: 0;
-}
-
-.title-btn {
-    padding-top: 1rem;
-}
-
-
-/* End About-Darmanito */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* font-family: font; */
+    }
+    /* color: #1894FF; */
+    /* background-color: #E6F3FF; */
+    /* Header */
+    
+    .navbar,
+    .lists,
+    .icon-brand {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navbar {
+        padding: 2rem 10rem;
+        align-items: center;
+    }
+    
+    .download-btn {
+        background-color: #E6F3FF;
+        color: #1894FF;
+        width: 155px;
+        padding: 0.6rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    .download-btn:focus {
+        outline: 0;
+    }
+    
+    .lists {
+        list-style: none;
+    }
+    
+    .item {
+        padding: 0rem 2rem;
+    }
+    
+    .item-link {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .main-title {
+        direction: rtl;
+        padding-right: 0.5rem;
+        padding-top: 0.5rem;
+    }
+    
+    .big-title {
+        font-size: 18px;
+    }
+    
+    .small-title {
+        font-size: 15px;
+    }
+    /* End Header */
+    /* Download-Section */
+    
+    .download-section {
+        padding: 4rem 10rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .title-download {
+        margin: 0 auto;
+        direction: rtl;
+        width: 50%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    
+    .first-title {
+        color: #1894FF;
+        font-size: 40px;
+    }
+    
+    .download-app {
+        background-color: #1894FF;
+        color: white;
+        border: none;
+        padding: 0.6rem;
+        border-radius: 6px;
+        width: 30%;
+        cursor: pointer;
+    }
+    
+    .download-app:focus {
+        outline: 0;
+    }
+    
+    .joined {
+        background-color: white;
+        border: 1px solid #1894FF;
+        color: #1894FF;
+        cursor: pointer;
+        padding: 0.6rem;
+        border-radius: 6px;
+        width: 30%;
+    }
+    
+    .joined:focus {
+        outline: 0;
+    }
+    /* End Download-Section */
+    /* About-Darmanito */
+    
+    .about-darmanito {
+        display: flex;
+        padding: 3rem 10rem;
+        justify-content: space-between;
+    }
+    
+    .texts {
+        direction: rtl;
+        padding-top: 5rem;
+        padding-right: 3rem;
+    }
+    
+    .about-title {
+        border-right: 4px solid #05FEA3;
+        padding-right: 0.8rem;
+        border-radius: 2px;
+        color: #0061b6;
+    }
+    
+    .explanation {
+        width: 80%;
+        line-height: 30px;
+    }
+    
+    .grid-container-about {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        padding-top: 3rem;
+        justify-items: center;
+    }
+    
+    .grid-item-about {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .btn-grid-about {
+        padding: 1rem;
+        background-color: white;
+        border: none;
+        box-shadow: 0px 0px 8px #7cc6e6;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    
+    .btn-grid:focus {
+        outline: 0;
+    }
+    
+    .title-btn {
+        padding-top: 1rem;
+    }
+    /* End About-Darmanito */
+    /* Darmanito's-Possibilities  */
+    
+    .possibilities {
+        padding: 2rem 10rem;
+        direction: rtl;
+    }
+    
+    .title-possibilities {
+        color: #0061b6;
+        border-right: 4px solid #05FEA3;
+        padding-right: 0.8rem;
+    }
+    
+    .main-possibilities {
+        display: flex;
+        padding-top: 2rem;
+    }
+    
+    .grid-container-possibilities {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+    
+    .grid-item-possibilities {
+        justify-content: center;
+        display: flex;
+    }
+    
+    .btn-grid-possibilities {
+        width: 100%;
+        border-radius: 25px;
+        cursor: pointer;
+        background-color: white;
+        box-shadow: 0px 0px 8px #7cc6e6;
+        border: none;
+        padding: 1rem 3rem;
+    }
+    
+    .btn-grid-possibilities:focus {
+        outline: 0;
+    }
+    
+    .btn-grid-possibilities h3 {
+        padding-top: 0.5rem;
+    }
+    
+    .img-pos {
+        width: 60px;
+    }
+    
+    .text-possibilities {
+        padding-right: 2rem;
+    }
+    
+    .ex-text {
+        width: 72%;
+        line-height: 40px;
+        padding-top: 1rem;
+    }
+    /* End Darmanito's-Possibilities */
