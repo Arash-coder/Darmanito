@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <title>Document</title>
 </head>
 
@@ -115,42 +116,230 @@
             <div class="option-possibilities">
                 <div class="grid-container-possibilities">
                     <div class="grid-item-possibilities">
-                        <button class="btn-grid-possibilities">
+                        <button class="btn-grid-possibilities actived">
                             <img src="images/pharmacy.svg" alt="pharmacy"><h3>داروخانه</h3>
                         </button>
                     </div>
                     <div class="grid-item-possibilities">
-                        <button class="btn-grid-possibilities">
+                        <button class="btn-grid-possibilities disable">
                             <img class="img-pos" src="images/market.svg" alt="market"><h3>فروشگاه</h3>
                         </button>
                     </div>
                     <div class="grid-item-possibilities">
-                        <button class="btn-grid-possibilities">
+                        <button class="btn-grid-possibilities disable">
                             <img class="img-pos" src="images/ear.svg" alt="online-visit"><h3>ویزیت آنلاین</h3>
                         </button>
                     </div>
                     <div class="grid-item-possibilities">
-                        <button class="btn-grid-possibilities">
+                        <button class="btn-grid-possibilities disable">
                             <img src="images/schedule.svg" alt="schedule"><h3>نوبت دهی آنلاین</h3>
                         </button>
                     </div>
                 </div>
             </div>
             <div class="text-possibilities">
-                <h2>داروخانه آنلاین</h2>
-                <p class="ex-text">در سرویس داروخانه شما میتوانید نسخه دارویی یا محصول بهداشتی خودتون رو برای پیدا شدن به داروخانه و فروشگاه ها سفارش بدید</p>
-                <div></div>
-                <div></div>
-                <div></div>
+                <h2 id="title">داروخانه آنلاین</h2>
+                <p id="ex-text" class="ex-text">در سرویس داروخانه شما میتوانید نسخه دارویی یا محصول بهداشتی خودتون رو برای پیدا شدن به داروخانه و فروشگاه ها سفارش بدید</p>
+                <div class="steps">
+                    <img class="img-steps" src="images/down.svg" alt="steps">
+                    <h3 class="text-steps">
+                        قدم اول
+                    </h3>
+                </div>
+                <div id="step1" class="ex-steps">وارد بخش سفارش با عکس نسخه شوید عکس و اوضیحات را وارد کنید</div>
+                <div class="steps">
+                    <img class="img-steps" src="images/down.svg" alt="steps">
+                    <h3 class="text-steps">
+                        قدم دوم
+                    </h3>
+                </div>
+                <div id="step2" class="ex-steps">بعد از ارسال عکس نسخه،باید آدرس محل خودتون رو وارد کنید</div>
+                <div class="steps">
+                    <img class="img-steps-special" src="images/check.svg" alt="steps">
+                    <h3 class="text-steps">
+                        قدم سوم
+                    </h3>
+                </div>
+                <div id="step3" class="ex-steps-special">اگر نتیجه جستجوی نسخه موفقیت آمیز باشه باید منتظر تحویل سفارش باشید</div>
             </div>
         </div>
     </div>
     <!-- End Darmanito's-Possibilities -->
+    <!-- download-App -->
+    <div class="download-app-downside">
+        <div class="pic-section">
+            <img src="images/screenshot.png" alt="mobile">
+        </div>
+        <div class="num-section">
+            <h1>دانلود اپلیکیشن درمانیتو</h1>
+            <h3 class="num-section-h3">برای دریافت لینک دانلود، شماره موبایل خود را وارد کنید.</h3>
+            <section class="form-send">
+                <input id="number" type="text" placeholder=" شماره همراه را وارد کنید مثال : 09120000000 ">
+                <button class="send-massage ">
+                <h4>
+                     بفرست
+                </h4>
+            </button>
+            </section>
+            <section class="download-links">
+                <a class="android" href="#">
+                    <img src="images/android.svg" alt="android">
+                    <p>دانلود مستقیم</p>
+                </a>
+                <a class="bazzar" href="#">
+                    <p>دریافت از</p>
+                    <img src="images/bazzar text.svg" alt="bazzar-text">
+                    <img src="images/bazzar logo.svg" alt="bazzar-logo">
+                </a>
+                <a class="sibapp" href="#">
+                    <img src="images/sib app logo.svg" alt="sibApp-logo">
+                    <section class="sibapp-section">
+                        <p>دریافت نسخه ios از </p>
+                        <img src="images/sib app text.svg" alt="sibApp-logo">
+                    </section>
+                </a>
+            </section>
+            <!-- <div id="error"></div> -->
+        </div>
+    </div>
+    <!-- End download-App -->
+    <!-- membershiop -->
+    <div class="membership">
+        <div class="main-member">
+            <div class="img-member">
+                <img class="img-doctor" src="images/footer.svg" alt="membershiop">
+            </div>
+            <div class="text-member">
+                <h1 class="title-member">عضویت داروخانه یا مراکز درمانی</h1>
+                <p class="paragrapg-member">اگر به عنوان داروخانه یا مرکز درمانی قصد دارید در روند درمان وکسب و کار خودتان تغییری ایجاد کنید درمانیتو منتظر شماست</p>
+                <section class="form-send-down">
+                    <input id="number" type="text" placeholder=" شماره همراه را وارد کنید مثال : 09120000000 ">
+                    <button class="send-massage ">
+                    <p>
+                         ثبت نام سریع
+                    </p>
+                </button>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- End membershiop -->
+    <!-- footer -->
+    <footer class="footer">
+        <div class="blue-section">
+            <ul class="contact">
+                <li>
+                    <p>پشتیبانی:44444444-021</p>
+                </li>
+            </ul>
+            <ul class="para">
+                <li class="para-li">
+                    <h4>
+                        پاسخگویی در روز های کاری از 9 صبح تا 9 شب
+                    </h4>
+                </li>
+                <li>
+                    <h1>
+                        پشتیبانی درمانیتو
+                    </h1>
+                </li>
+            </ul>
+        </div>
+        <div class="main-footer">
+            <div class="links">
+                <h3 class="title-link">دانلود درمانیتو
+                </h3>
+                <section class="download-links-footer">
+                    <a class="sibapp-footer" href="#">
+                        <img src="images/sib app logo.svg" alt="sibApp-logo">
+                        <section class="sibapp-section-footer">
+                            <p>دریافت نسخه ios از </p>
+                            <img src="images/sib app text.svg" alt="sibApp-logo">
+                        </section>
+                    </a>
+                    <a class="bazzar-footer" href="#">
+                        <p>دریافت از</p>
+                        <img src="images/bazzar text.svg" alt="bazzar-text">
+                        <img src="images/bazzar logo.svg" alt="bazzar-logo">
+                    </a>
+                </section>
+            </div>
+            <div class="footer-ul">
+                <ul class="pages">
+                    <li>
+                        <h3>صفحات درمانیتو</h3>
+                    </li>
+                    <li>
+                        <a href="#">
+                            تماس با ما 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            درباره ما 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">سوالات متداول</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            قوانین و شرایط
+                        </a>
+                    </li>
+                </ul>
+                <ul class="services">
+                    <li>
+                        <h3>خدمات درمانیتو</h3>
+                    </li>
+                    <li>
+                        <a href="#">
+                           داروخانه آنلاین
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            فروشکاه آنلاین 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">ویزیت آنلاین</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                           پرونده پزشکی
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <section class="section">
+                    <p><span class="first">درمانیتو</span><br><span class="second">همراه شما در زمان</span></p>
+                    <img class="brand-footer" src="images/brand.png" alt="brand-darmanito">
+                </section>
+                <h4>سوپر اپلیکیشن حوزه درمان و سلامت </h4>
+                <p>تمام حقوق مادی و معنوی این وبسایت متعلق به درمانیتو است</p>
+                <section class="section-links">
+                    <a href="#">
+                        <i class='fab fa-instagram'></i>
+                    </a>
+                    <a href="#">
+                        <i class='fab fa-twitter'></i>
+                    </a>
+                    <a href="#">
+                        <i class='fab fa-linkedin-in'></i>
+                    </a>
+                </section>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- End footer -->
 
 
 
-
-    <script src="js/script.js"></script>
+    <script src="js/script.js "></script>
 </body>
 
 </html>
