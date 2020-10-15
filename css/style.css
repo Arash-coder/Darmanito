@@ -3,11 +3,16 @@
     font-family: font;
 } */
             
+            @font-face {
+                src: url("../fonts/Yekan.ttf");
+                font-family: Yekan;
+            }
+            
             * {
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
-                /* font-family: font; */
+                font-family: Yekan;
             }
             /* color: #1894FF; */
             /* background-color: #E6F3FF; */
@@ -17,11 +22,11 @@
             .lists,
             .icon-brand {
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
             }
             
             .navbar {
-                padding: 2rem 10rem;
+                padding: 2rem 1rem;
                 align-items: center;
             }
             
@@ -65,6 +70,22 @@
             
             .small-title {
                 font-size: 15px;
+            }
+            
+            .burger div {
+                width: 25px;
+                height: 2px;
+                background-color: #1894FF;
+                margin: 5px;
+                transition: all 0.3s ease;
+            }
+            
+            .burger {
+                display: none;
+            }
+            
+            .image-brand {
+                width: 45px;
             }
             /* End Header */
             /* Download-Section */
@@ -129,6 +150,7 @@
                 direction: rtl;
                 padding-top: 5rem;
                 padding-right: 3rem;
+                width: 50%;
             }
             
             .about-title {
@@ -474,7 +496,7 @@
                 background-color: #1091ff;
                 color: white;
                 padding: 0.7rem 2rem;
-                font-size: 20px;
+                font-size: 15px;
                 border-radius: 15px;
                 cursor: pointer;
             }
@@ -655,3 +677,193 @@
                 justify-content: center;
             }
             /* End footer */
+            /* responsive */
+            
+            @media (max-width:768px) {
+                body {
+                    overflow-x: hidden;
+                }
+                .lists {
+                    position: absolute;
+                    right: 0;
+                    top: 20vh;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 100vh;
+                    width: 100%;
+                    transform: translateX(-100%);
+                    background-color: brown;
+                    transition: transform 0.5s ease-in;
+                }
+                .item {
+                    opacity: 0;
+                }
+                .download-darmanito {
+                    display: none;
+                }
+                .burger {
+                    display: block;
+                    cursor: pointer;
+                }
+                .download-section {
+                    display: block;
+                    padding: 4rem 0rem;
+                }
+                .download-section img {
+                    display: flex;
+                    margin: 0 auto;
+                }
+                .title-download {
+                    width: 100%;
+                    align-items: center;
+                    padding-top: 2rem;
+                }
+                .title-download div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                    row-gap: 10px;
+                }
+                .about-darmanito {
+                    padding: 4rem 0rem;
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+                .about-darmanito img {
+                    width: 60%;
+                    display: flex;
+                    margin: 0 auto;
+                }
+                .texts {
+                    width: 100%;
+                    padding: 1rem 3rem;
+                }
+                .grid-container-about {
+                    display: none;
+                }
+                .possibilities {
+                    padding: 2rem 3rem;
+                }
+                .main-possibilities {
+                    display: block;
+                }
+                .grid-container-possibilities {
+                    padding: 1rem 6rem;
+                    grid-gap: 15px;
+                    justify-content: center;
+                }
+                .img-steps {
+                    width: 7%;
+                }
+                .img-steps-special {
+                    width: 7%;
+                }
+                .ex-steps {
+                    width: 93.5%;
+                }
+                .text-possibilities {
+                    padding: 2rem 0rem;
+                }
+                .download-app-downside {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+                .num-section {
+                    width: 100%;
+                    padding: 5rem 3rem;
+                }
+                .download-links {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    row-gap: 10px;
+                }
+                .download-links .android {
+                    display: none;
+                }
+                .download-links a {
+                    width: 36%;
+                    justify-content: center;
+                }
+                .pic-section {
+                    width: 100%;
+                }
+                .membership {
+                    padding: 2rem 3rem;
+                }
+                .main-member {
+                    display: block;
+                }
+                .img-doctor {
+                    padding: 2rem 0rem;
+                    display: flex;
+                    margin: 0 auto;
+                }
+                .img-member {
+                    width: 100%;
+                }
+                .text-member {
+                    width: 100%;
+                    padding: 2rem 0rem;
+                }
+                .form-send-down button p {
+                    font-size: 15px;
+                }
+                .blue-section {
+                    flex-direction: column-reverse;
+                }
+                .para {
+                    flex-direction: column-reverse;
+                    padding-bottom: 2rem
+                }
+                .para-li {
+                    padding-top: 1rem;
+                    padding-right: 0rem;
+                }
+                .main-footer {
+                    padding: 2rem 3rem;
+                }
+                .links {
+                    display: none;
+                }
+                .footer-ul {
+                    display: none;
+                }
+                .contact-us {
+                    width: 100%;
+                }
+                .section-links {
+                    justify-content: center;
+                    padding-top: 1rem;
+                }
+            }
+            
+            .nav-active {
+                transform: translateX(0%);
+            }
+            
+            @keyframes navlinkfade {
+                from {
+                    opacity: 0;
+                    transform: translateX(-50px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+            }
+            
+            .toggle .line1 {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+            
+            .toggle .line2 {
+                opacity: 0;
+            }
+            
+            .toggle .line3 {
+                transform: rotate(45deg) translate(-4px, -6px);
+            }
+            /* End responsive */
