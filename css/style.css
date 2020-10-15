@@ -55,7 +55,9 @@
             
             .item-link {
                 text-decoration: none;
-                color: black;
+                color: #0061b6;
+                font-size: 20px;
+                padding-right: 1rem;
             }
             
             .main-title {
@@ -679,22 +681,165 @@
             /* End footer */
             /* responsive */
             
+            @media(min-width:2000px) and (max-width:2560px) {
+                .navbar {
+                    padding: 2rem 20rem;
+                }
+                .download-section {
+                    padding: 4rem 33rem;
+                }
+                .about-darmanito {
+                    justify-content: center;
+                }
+                .possibilities {
+                    padding: 2rem 34rem;
+                }
+                .main-possibilities {
+                    justify-content: center;
+                }
+                .num-section {
+                    padding: 11rem 15rem;
+                    font-size: 32px;
+                }
+                .download-links {
+                    width: 90%;
+                }
+                .membership {
+                    padding: 6rem 30rem;
+                }
+                .form-send-down {
+                    padding: 0rem 7rem;
+                }
+                .blue-section {
+                    padding: 2rem 30rem;
+                }
+                .main-footer {
+                    padding: 4rem 30rem;
+                }
+            }
+            
+            @media(max-width:1350px) {
+                .pic-section img {
+                    width: 47%;
+                }
+                .num-section {
+                    padding: 6rem 2rem;
+                }
+                .form-send-down {
+                    padding: 0rem 1rem;
+                }
+                .main-footer {
+                    padding: 4rem 3rem;
+                }
+            }
+            
+            @media(max-width:1153px) {
+                .download-section {
+                    padding: 4rem 3rem;
+                }
+                .about-darmanito {
+                    padding: 3rem 3rem;
+                }
+                .possibilities {
+                    padding: 2rem 3rem;
+                }
+                .pic-section {
+                    width: 57%;
+                }
+                .download-links .android {
+                    display: none;
+                }
+                .pic-section img {
+                    width: 50%;
+                }
+                .membership {
+                    padding: 2rem 3rem;
+                }
+                .blue-section {
+                    padding: 2rem 3rem;
+                }
+                .main-footer {
+                    padding: 4rem 1rem;
+                }
+            }
+            
+            @media(max-width:992px) {
+                .pic-section img {
+                    width: 53%;
+                }
+                .membership {
+                    padding: 2rem 2rem;
+                }
+                .brand-footer {
+                    width: 15%;
+                    height: 55px;
+                    margin-top: 1rem;
+                }
+            }
+            
+            @media(max-width:893px) {
+                .navbar {
+                    padding: 2rem 0rem;
+                    font-size: 11px;
+                }
+                .download-section {
+                    padding: 4rem 1rem;
+                }
+                .about-darmanito {
+                    padding: 3rem 0rem;
+                }
+                .texts {
+                    padding: 0rem;
+                }
+                .about-darmanito img {
+                    width: 80%;
+                    display: flex;
+                    margin: 0 auto;
+                }
+                .main-possibilities {
+                    display: block;
+                }
+                .grid-container-possibilities {
+                    padding: 1rem 8rem;
+                }
+                .download-links {
+                    display: block;
+                }
+                .download-links a {
+                    justify-content: center;
+                    margin-top: 0.5rem;
+                }
+                .pic-section img {
+                    width: 76%;
+                }
+                .form-send-down {
+                    padding: 1rem 0.2rem;
+                }
+                .form-send-down button p {
+                    font-size: 0px;
+                }
+                .blue-section {
+                    padding: 2rem 0.1rem;
+                }
+            }
+            
             @media (max-width:768px) {
                 body {
                     overflow-x: hidden;
                 }
                 .lists {
                     position: absolute;
-                    right: 0;
+                    left: 0;
                     top: 20vh;
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
+                    align-items: flex-end;
                     height: 100vh;
                     width: 100%;
                     transform: translateX(-100%);
-                    background-color: brown;
+                    background-color: rgb(241, 241, 241);
                     transition: transform 0.5s ease-in;
+                    padding-right: 6rem;
                 }
                 .item {
                     opacity: 0;
@@ -838,6 +983,16 @@
                     justify-content: center;
                     padding-top: 1rem;
                 }
+                .brand-footer {
+                    width: 6%;
+                    height: 40px;
+                    margin-top: 1.5rem;
+                }
+                .item-link:hover {
+                    border-right: 2px solid #05FEA3;
+                    padding-right: 1rem;
+                    color: #0061b6;
+                }
             }
             
             .nav-active {
@@ -865,5 +1020,36 @@
             
             .toggle .line3 {
                 transform: rotate(45deg) translate(-4px, -6px);
+            }
+            
+            @media(max-width:500px) {
+                .img-doctor {
+                    width: 300px;
+                }
+                .download-section img {
+                    width: 300px;
+                }
+                .img-steps {
+                    width: 10%;
+                }
+                .img-steps-special {
+                    width: 10%;
+                }
+                .ex-steps {
+                    width: 90.5%;
+                }
+                .download-links a {
+                    width: 70%;
+                    justify-content: center;
+                }
+                .download-app {
+                    width: 40%;
+                }
+                .joined {
+                    width: 40%;
+                }
+                .form-send-down input {
+                    width: 60%;
+                }
             }
             /* End responsive */
