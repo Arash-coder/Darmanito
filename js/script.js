@@ -53,12 +53,7 @@ actived.addEventListener("click", function() {
 })
 
 
-// function arash() {
-//     var x = document.getElementById("number").value;
-//     if (x < 11 && isNaN(x) && x > 11) {
-//         document.getElementById("error").innerHTML = "wrong";
-//     }
-// }
+
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.lists');
@@ -79,3 +74,66 @@ const navSlide = () => {
     });
 }
 navSlide();
+
+const downloadsection = () => {
+    const input = document.getElementById('input');
+    const button = document.getElementById('button');
+    const error = document.getElementById('error');
+    button.addEventListener("click", () => {
+        if (input.value.length > 11) {
+            error.style.display = 'block';
+        } else if (input.value.length < 11) {
+            error.style.display = 'block';
+
+        } else {
+            error.style.display = 'none';
+
+        }
+    });
+    input.addEventListener("keypress", (event) => {
+        if (input.value.length > 11 && event.which === 13) {
+            error.style.display = 'block';
+        } else if (input.value.length < 11 && event.which === 13) {
+            error.style.display = 'block';
+
+        } else {
+            error.style.display = 'none';
+
+        }
+    });
+
+
+
+}
+downloadsection();
+const downloadsection2 = () => {
+    const input2 = document.getElementById('input2');
+    const button2 = document.getElementById('button2');
+    const error2 = document.getElementById('error2');
+    button2.addEventListener("click", () => {
+        if (input2.value.length > 11) {
+            error2.style.display = 'block';
+        } else if (input2.value.length < 11) {
+            error2.style.display = 'block';
+
+        } else {
+            error2.style.display = 'none';
+
+        }
+    });
+    input2.addEventListener("keypress", (event2) => {
+        if (input2.value.length > 11 && event2.which === 13) {
+            error2.style.display = 'block';
+        } else if (input2.value.length < 11 && event2.which === 13) {
+            error2.style.display = 'block';
+
+        } else {
+            error2.style.display = 'none';
+
+        }
+    });
+
+
+
+}
+downloadsection2();

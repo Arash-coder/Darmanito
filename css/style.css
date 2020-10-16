@@ -1,1055 +1,1101 @@
-            /* @font-face {
-    src: url("fonts/koodak.ttf");
-    font-family: font;
-} */
-            
-            @font-face {
-                src: url("../fonts/Yekan.ttf");
-                font-family: Yekan;
-            }
-            
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: Yekan;
-            }
-            /* color: #1894FF; */
-            /* background-color: #E6F3FF; */
-            /* Header */
-            
-            .navbar,
-            .lists,
-            .icon-brand {
-                display: flex;
-                justify-content: space-around;
-            }
-            
-            .navbar {
-                padding: 2rem 1rem;
-                align-items: center;
-            }
-            
-            .download-btn {
-                background-color: #E6F3FF;
-                color: #1894FF;
-                width: 155px;
-                padding: 0.6rem;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                font-size: 16px;
-            }
-            
-            .download-btn:focus {
-                outline: 0;
-            }
-            
-            .lists {
-                list-style: none;
-            }
-            
-            .item {
-                padding: 0rem 2rem;
-            }
-            
-            .item-link {
-                text-decoration: none;
-                color: #0061b6;
-                font-size: 20px;
-                padding-right: 1rem;
-            }
-            
-            .main-title {
-                direction: rtl;
-                padding-right: 0.5rem;
-                padding-top: 0.5rem;
-            }
-            
-            .big-title {
-                font-size: 18px;
-            }
-            
-            .small-title {
-                font-size: 15px;
-            }
-            
-            .burger div {
-                width: 25px;
-                height: 2px;
-                background-color: #1894FF;
-                margin: 5px;
-                transition: all 0.3s ease;
-            }
-            
-            .burger {
-                display: none;
-            }
-            
-            .image-brand {
-                width: 45px;
-            }
-            /* End Header */
-            /* Download-Section */
-            
-            .download-section {
-                padding: 4rem 10rem;
-                display: flex;
-                justify-content: space-between;
-            }
-            
-            .title-download {
-                margin: 0 auto;
-                direction: rtl;
-                width: 50%;
-                display: flex;
-                flex-flow: column;
-                justify-content: center;
-            }
-            
-            .first-title {
-                color: #1894FF;
-                font-size: 40px;
-            }
-            
-            .download-app {
-                background-color: #1894FF;
-                color: white;
-                border: none;
-                padding: 0.6rem;
-                border-radius: 6px;
-                width: 30%;
-                cursor: pointer;
-            }
-            
-            .download-app:focus {
-                outline: 0;
-            }
-            
-            .joined {
-                background-color: white;
-                border: 1px solid #1894FF;
-                color: #1894FF;
-                cursor: pointer;
-                padding: 0.6rem;
-                border-radius: 6px;
-                width: 30%;
-            }
-            
-            .joined:focus {
-                outline: 0;
-            }
-            /* End Download-Section */
-            /* About-Darmanito */
-            
-            .about-darmanito {
-                display: flex;
-                padding: 3rem 10rem;
-                justify-content: space-between;
-            }
-            
-            .texts {
-                direction: rtl;
-                padding-top: 5rem;
-                padding-right: 3rem;
-                width: 50%;
-            }
-            
-            .about-title {
-                border-right: 4px solid #05FEA3;
-                padding-right: 0.8rem;
-                border-radius: 2px;
-                color: #0061b6;
-            }
-            
-            .explanation {
-                width: 80%;
-                line-height: 30px;
-            }
-            
-            .grid-container-about {
-                display: grid;
-                grid-template-columns: auto auto auto auto;
-                padding-top: 3rem;
-                justify-items: center;
-            }
-            
-            .grid-item-about {
-                display: flex;
-                flex-flow: column;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .btn-grid-about {
-                padding: 1rem;
-                background-color: white;
-                border: none;
-                box-shadow: 0px 0px 8px #7cc6e6;
-                border-radius: 20px;
-                cursor: pointer;
-            }
-            
-            .btn-grid-about:focus {
-                outline: 0;
-            }
-            
-            .title-btn {
-                padding-top: 1rem;
-            }
-            /* End About-Darmanito */
-            /* Darmanito's-Possibilities  */
-            
-            .possibilities {
-                padding: 2rem 10rem;
-                direction: rtl;
-            }
-            
-            .title-possibilities {
-                color: #0061b6;
-                border-right: 4px solid #05FEA3;
-                padding-right: 0.8rem;
-            }
-            
-            .main-possibilities {
-                display: flex;
-                padding-top: 2rem;
-            }
-            
-            .grid-container-possibilities {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-gap: 30px;
-            }
-            
-            .grid-item-possibilities {
-                justify-content: center;
-                display: flex;
-            }
-            
-            .btn-grid-possibilities,
-            .actived {
-                width: 100%;
-                border-radius: 25px;
-                cursor: pointer;
-                background-color: white;
-                box-shadow: 0px 0px 8px #a3daf1;
-                border: none;
-                padding: 1rem 3rem;
-            }
-            
-            .disable {
-                box-shadow: 0px 0px 8px gray;
-                color: gray;
-                opacity: 0.5;
-            }
-            
-            .btn-grid-possibilities:focus {
-                outline: 0;
-            }
-            
-            .btn-grid-possibilities h3 {
-                padding-top: 0.5rem;
-            }
-            
-            .img-pos {
-                width: 60px;
-            }
-            
-            .text-possibilities {
-                padding-right: 3rem;
-            }
-            
-            .ex-text {
-                width: 72%;
-                line-height: 40px;
-                padding-top: 1rem;
-            }
-            
-            .steps {
-                /* padding-top: 2rem; */
-                display: flex;
-                align-items: center;
-            }
-            
-            .img-steps {
-                width: 5%;
-                padding: 0.5rem;
-                background-color: #c7e8f7;
-                border-radius: 30px;
-            }
-            
-            .text-steps {
-                padding-right: 1rem;
-            }
-            
-            .ex-steps {
-                width: 95.5%;
-                margin: 0 auto;
-                border-right: 1px solid gray;
-                padding: 1rem 3rem;
-            }
-            
-            .img-steps-special {
-                width: 5%;
-                padding: 0.5rem;
-                background-color: #05FEA3;
-                border-radius: 30px;
-            }
-            
-            .ex-steps-special {
-                width: 95.5%;
-                margin: 0 auto;
-                padding: 1rem 3rem;
-            }
-            /* End Darmanito's-Possibilities */
-            /* download-App */
-            
-            .download-app-downside {
-                background-color: #1091ff;
-                display: flex;
-                position: relative;
-                margin-bottom: 2rem;
-            }
-            
-            .pic-section {
-                width: 50%;
-            }
-            
-            .pic-section img {
-                width: 40%;
-                margin: 0 auto;
-                display: flex;
-                padding-top: 1rem;
-                border-radius: 45px 45px 0px 0px;
-            }
-            
-            .num-section {
-                width: 50%;
-                display: flex;
-                flex-flow: column;
-                direction: rtl;
-                padding: 6rem 5rem;
-                color: white;
-            }
-            
-            .num-section-h3 {
-                padding-top: 1rem;
-            }
-            
-            .form-send {
-                display: flex;
-                justify-content: center;
-                padding-top: 2rem;
-            }
-            
-            .form-send input {
-                width: 82%;
-                padding: 0.7rem;
-                border: none;
-                border-radius: 0px 15px 15px 0px;
-                text-align: center;
-                font-size: 20px;
-            }
-            
-             ::placeholder {
-                font-size: 15px;
-            }
-            
-            .form-send input:focus {
-                outline: 0;
-            }
-            
-            .form-send button {
-                border: none;
-                background-color: white;
-                padding: 1rem;
-                border-radius: 15px 0px 0px 15px;
-            }
-            
-            .form-send button h4 {
-                background-color: #1091ff;
-                color: white;
-                padding: 0.7rem 2rem;
-                font-size: 20px;
-                border-radius: 15px;
-                cursor: pointer;
-            }
-            
-            .form-send button:focus {
-                outline: 0;
-            }
-            
-            .download-links {
-                display: flex;
-                justify-content: space-between;
-                padding-top: 2rem;
-            }
-            
-            .download-links a {
-                display: flex;
-                align-items: center;
-                background-color: #2162b7;
-                color: white;
-                text-decoration: none;
-                padding: 0.4rem 1rem;
-                border-radius: 9px
-            }
-            
-            .android p {
-                padding-right: 1rem;
-            }
-            
-            .bazzar p,
-            .bazzar img {
-                padding-right: 0.5rem;
-            }
-            
-            .sibapp p {
-                font-size: 12px;
-            }
-            
-            .sibapp-section {
-                padding-right: 0.7rem;
-            }
-            /* #error {
-                padding: 1rem;
-                color: red;
-                font-size: 40px
-            } */
-            /* End download-App */
-            /* membership */
-            
-            .membership {
-                padding: 2rem 10rem;
-            }
-            
-            .main-member {
-                display: flex;
-                box-shadow: 0px 0px 10px #7cc6e6;
-                border-radius: 12px;
-            }
-            
-            .img-member {
-                width: 50%;
-            }
-            
-            .text-member {
-                width: 65%;
-                padding-top: 2rem;
-            }
-            
-            .img-doctor {
-                width: 400px;
-                padding: 4rem 2rem 0rem 2rem;
-            }
-            
-            .title-member {
-                direction: rtl;
-                display: flex;
-                border-right: 2px solid #05FEA3;
-                width: 85%;
-                margin: 0 auto;
-                padding-right: 0.8rem;
-                border-radius: 3px;
-                color: #0061b6;
-            }
-            
-            .paragrapg-member {
-                direction: rtl;
-                padding: 3rem;
-            }
-            
-            .form-send-down {
-                display: flex;
-                justify-content: center;
-                padding: 0rem 2rem;
-                direction: rtl;
-            }
-            
-            .form-send-down input {
-                width: 82%;
-                padding: 0.7rem;
-                border: none;
-                border-radius: 0px 15px 15px 0px;
-                text-align: center;
-                font-size: 20px;
-                background-color: rgb(224, 224, 224);
-            }
-            
-             ::placeholder {
-                font-size: 15px;
-            }
-            
-            .form-send-down input:focus {
-                outline: 0;
-            }
-            
-            .form-send-down button {
-                border: none;
-                background-color: white;
-                padding: 1rem;
-                border-radius: 15px 0px 0px 15px;
-                background-color: rgb(224, 224, 224);
-                width: 45%;
-            }
-            
-            .form-send-down button p {
-                background-color: #1091ff;
-                color: white;
-                padding: 0.7rem 2rem;
-                font-size: 15px;
-                border-radius: 15px;
-                cursor: pointer;
-            }
-            
-            .form-send-down button:focus {
-                outline: 0;
-            }
-            /* End membership */
-            /* footer */
-            
-            .blue-section {
-                background-color: #1091ff;
-                padding: 2rem 10rem;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-            
-            .blue-section ul {
-                list-style: none;
-            }
-            
-            .para {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 0rem 1rem;
-                color: white;
-            }
-            
-            .para-li {
-                padding-right: 1.5rem;
-            }
-            
-            .contact li p {
-                background: blue;
-                color: white;
-                padding: 1rem;
-                border-radius: 15px;
-            }
-            
-            .main-footer {
-                padding: 4rem 10rem;
-                display: flex;
-                justify-content: space-between;
-            }
-            /* .links {
-                width: 30%;
-            } */
-            
-            .footer-ul {
-                width: 30%;
-                display: flex;
-                justify-content: space-between;
-            }
-            
-            .footer-ul ul {
-                list-style-type: none;
-                text-align: end;
-            }
-            
-            .footer-ul ul li {
-                padding-top: 1rem;
-            }
-            
-            .footer-ul ul li a {
-                text-decoration: none;
-                color: gray;
-            }
-            
-            .link-actived {
-                color: #0061b6;
-                border-right: 2px solid #05FEA3;
-                padding-right: 0.5rem;
-            }
-            
-            .link-disabled {
-                color: gray;
-            }
-            
-            .contact-us {
-                width: 30%;
-            }
-            
-            .contact-us h4 {
-                direction: rtl;
-                padding-top: 1rem;
-            }
-            
-            .contact-us p {
-                direction: rtl;
-                padding-top: 1rem;
-            }
-            
-            .contact-us .section {
-                display: flex;
-                justify-content: flex-end;
-            }
-            
-            .contact-us .section p {
-                direction: rtl;
-                padding-right: 0.5rem;
-            }
-            
-            .first {
-                font-weight: 900;
-                font-size: 22px;
-            }
-            
-            .second {
-                padding-top: 0.7rem;
-            }
-            
-            .section-links {
-                display: flex;
-                justify-content: flex-end;
-            }
-            
-            .section-links a {
-                padding: 0.5rem;
-                color: gray;
-            }
-            
-            .link-footer-actived {
-                color: #0061b6;
-            }
-            
-            .section-links a i {
-                font-size: 25px;
-            }
-            
-            .brand-footer {
-                width: 15%;
-            }
-            
-            .download-links-footer {
-                display: flex;
-                justify-content: space-between;
-                padding-top: 2rem;
-            }
-            
-            .download-links-footer a {
-                display: flex;
-                align-items: center;
-                background-color: black;
-                color: white;
-                text-decoration: none;
-                padding: 0.4rem 1rem;
-                border-radius: 9px
-            }
-            
-            .sibapp-footer {
-                direction: rtl;
-                display: flex;
-                margin-right: 1rem;
-            }
-            
-            .bazzar-footer {
-                direction: rtl;
-                display: flex;
-            }
-            
-            .bazzar-footer p,
-            .bazzar-footer img {
-                padding-right: 0.5rem;
-            }
-            
-            .sibapp-footer p {
-                font-size: 12px;
-            }
-            
-            .sibapp-section-footer {
-                padding-right: 0.7rem;
-            }
-            
-            .title-link {
-                display: flex;
-                justify-content: center;
-            }
-            /* End footer */
-            /* responsive */
-            
-            @media(min-width:2000px) and (max-width:2560px) {
-                .navbar {
-                    padding: 2rem 20rem;
-                }
-                .download-section {
-                    padding: 4rem 33rem;
-                }
-                .about-darmanito {
-                    justify-content: center;
-                }
-                .possibilities {
-                    padding: 2rem 34rem;
-                }
-                .main-possibilities {
-                    justify-content: center;
-                }
-                .num-section {
-                    padding: 11rem 15rem;
-                    font-size: 32px;
-                }
-                .download-links {
-                    width: 90%;
-                }
-                .membership {
-                    padding: 6rem 30rem;
-                }
-                .form-send-down {
-                    padding: 0rem 7rem;
-                }
-                .blue-section {
-                    padding: 2rem 30rem;
-                }
-                .main-footer {
-                    padding: 4rem 30rem;
-                }
-            }
-            
-            @media(max-width:1350px) {
-                .pic-section img {
-                    width: 47%;
-                }
-                .num-section {
-                    padding: 6rem 2rem;
-                }
-                .form-send-down {
-                    padding: 0rem 1rem;
-                }
-                .main-footer {
-                    padding: 4rem 3rem;
-                }
-            }
-            
-            @media(max-width:1153px) {
-                .download-section {
-                    padding: 4rem 3rem;
-                }
-                .about-darmanito {
-                    padding: 3rem 3rem;
-                }
-                .possibilities {
-                    padding: 2rem 3rem;
-                }
-                .pic-section {
-                    width: 57%;
-                }
-                .download-links .android {
-                    display: none;
-                }
-                .pic-section img {
-                    width: 50%;
-                }
-                .membership {
-                    padding: 2rem 3rem;
-                }
-                .blue-section {
-                    padding: 2rem 3rem;
-                }
-                .main-footer {
-                    padding: 4rem 1rem;
-                }
-            }
-            
-            @media(max-width:992px) {
-                .pic-section img {
-                    width: 53%;
-                }
-                .membership {
-                    padding: 2rem 2rem;
-                }
-                .brand-footer {
-                    width: 15%;
-                    height: 55px;
-                    margin-top: 1rem;
-                }
-            }
-            
-            @media(max-width:893px) {
-                .navbar {
-                    padding: 2rem 0rem;
-                    font-size: 11px;
-                }
-                .download-section {
-                    padding: 4rem 1rem;
-                }
-                .about-darmanito {
-                    padding: 3rem 0rem;
-                }
-                .texts {
-                    padding: 0rem;
-                }
-                .about-darmanito img {
-                    width: 80%;
-                    display: flex;
-                    margin: 0 auto;
-                }
-                .main-possibilities {
-                    display: block;
-                }
-                .grid-container-possibilities {
-                    padding: 1rem 8rem;
-                }
-                .download-links {
-                    display: block;
-                }
-                .download-links a {
-                    justify-content: center;
-                    margin-top: 0.5rem;
-                }
-                .pic-section img {
-                    width: 76%;
-                }
-                .form-send-down {
-                    padding: 1rem 0.2rem;
-                }
-                .form-send-down button p {
-                    font-size: 0px;
-                }
-                .blue-section {
-                    padding: 2rem 0.1rem;
-                }
-            }
-            
-            @media (max-width:768px) {
-                body {
-                    overflow-x: hidden;
-                }
-                .lists {
-                    position: absolute;
-                    left: 0;
-                    top: 20vh;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-end;
-                    height: 100vh;
-                    width: 100%;
-                    transform: translateX(-100%);
-                    background-color: rgb(241, 241, 241);
-                    transition: transform 0.5s ease-in;
-                    padding-right: 6rem;
-                }
-                .item {
-                    opacity: 0;
-                }
-                .download-darmanito {
-                    display: none;
-                }
-                .burger {
-                    display: block;
-                    cursor: pointer;
-                }
-                .download-section {
-                    display: block;
-                    padding: 4rem 0rem;
-                }
-                .download-section img {
-                    display: flex;
-                    margin: 0 auto;
-                }
-                .title-download {
-                    width: 100%;
-                    align-items: center;
-                    padding-top: 2rem;
-                }
-                .title-download div {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    width: 100%;
-                    row-gap: 10px;
-                }
-                .about-darmanito {
-                    padding: 4rem 0rem;
-                    display: flex;
-                    flex-direction: column-reverse;
-                }
-                .about-darmanito img {
-                    width: 60%;
-                    display: flex;
-                    margin: 0 auto;
-                }
-                .texts {
-                    width: 100%;
-                    padding: 1rem 3rem;
-                }
-                .grid-container-about {
-                    display: none;
-                }
-                .possibilities {
-                    padding: 2rem 3rem;
-                }
-                .main-possibilities {
-                    display: block;
-                }
-                .grid-container-possibilities {
-                    padding: 1rem 6rem;
-                    grid-gap: 15px;
-                    justify-content: center;
-                }
-                .img-steps {
-                    width: 7%;
-                }
-                .img-steps-special {
-                    width: 7%;
-                }
-                .ex-steps {
-                    width: 93.5%;
-                }
-                .text-possibilities {
-                    padding: 2rem 0rem;
-                }
-                .download-app-downside {
-                    display: flex;
-                    flex-direction: column-reverse;
-                }
-                .num-section {
-                    width: 100%;
-                    padding: 5rem 3rem;
-                }
-                .download-links {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    row-gap: 10px;
-                }
-                .download-links .android {
-                    display: none;
-                }
-                .download-links a {
-                    width: 36%;
-                    justify-content: center;
-                }
-                .pic-section {
-                    width: 100%;
-                }
-                .membership {
-                    padding: 2rem 3rem;
-                }
-                .main-member {
-                    display: block;
-                }
-                .img-doctor {
-                    padding: 2rem 0rem;
-                    display: flex;
-                    margin: 0 auto;
-                }
-                .img-member {
-                    width: 100%;
-                }
-                .text-member {
-                    width: 100%;
-                    padding: 2rem 0rem;
-                }
-                .form-send-down button p {
-                    font-size: 15px;
-                }
-                .blue-section {
-                    flex-direction: column-reverse;
-                }
-                .para {
-                    flex-direction: column-reverse;
-                    padding-bottom: 2rem
-                }
-                .para-li {
-                    padding-top: 1rem;
-                    padding-right: 0rem;
-                }
-                .main-footer {
-                    padding: 2rem 3rem;
-                }
-                .links {
-                    display: none;
-                }
-                .footer-ul {
-                    display: none;
-                }
-                .contact-us {
-                    width: 100%;
-                }
-                .section-links {
-                    justify-content: center;
-                    padding-top: 1rem;
-                }
-                .brand-footer {
-                    width: 6%;
-                    height: 40px;
-                    margin-top: 1.5rem;
-                }
-                .item-link:hover {
-                    border-right: 2px solid #05FEA3;
-                    padding-right: 1rem;
-                    color: #0061b6;
-                }
-            }
-            
-            .nav-active {
-                transform: translateX(0%);
-            }
-            
-            @keyframes navlinkfade {
-                from {
-                    opacity: 0;
-                    transform: translateX(-50px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateX(0px);
-                }
-            }
-            
-            .toggle .line1 {
-                transform: rotate(-45deg) translate(-5px, 6px);
-            }
-            
-            .toggle .line2 {
-                opacity: 0;
-            }
-            
-            .toggle .line3 {
-                transform: rotate(45deg) translate(-4px, -6px);
-            }
-            
-            @media(max-width:500px) {
-                .img-doctor {
-                    width: 300px;
-                }
-                .download-section img {
-                    width: 300px;
-                }
-                .img-steps {
-                    width: 10%;
-                }
-                .img-steps-special {
-                    width: 10%;
-                }
-                .ex-steps {
-                    width: 90.5%;
-                }
-                .download-links a {
-                    width: 70%;
-                    justify-content: center;
-                }
-                .download-app {
-                    width: 40%;
-                }
-                .joined {
-                    width: 40%;
-                }
-                .form-send-down input {
-                    width: 60%;
-                }
-            }
-            /* End responsive */
+@font-face {
+    src: url("../fonts/Yekan.ttf");
+    font-family: Yekan;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Yekan;
+}
+
+
+/* Header */
+
+.navbar,
+.lists,
+.icon-brand {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar {
+    padding: 2rem 1rem;
+    align-items: center;
+}
+
+.download-btn {
+    background-color: #E6F3FF;
+    color: #1894FF;
+    width: 155px;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.download-btn:focus {
+    outline: 0;
+}
+
+.lists {
+    list-style: none;
+}
+
+.item {
+    padding: 0rem 2rem;
+}
+
+.item-link {
+    text-decoration: none;
+    color: #0061b6;
+    font-size: 20px;
+    padding-right: 1rem;
+}
+
+.main-title {
+    direction: rtl;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.big-title {
+    font-size: 18px;
+}
+
+.small-title {
+    font-size: 15px;
+}
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: #1894FF;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.burger {
+    display: none;
+}
+
+.image-brand {
+    width: 45px;
+}
+
+
+/* End Header */
+
+
+/* Download-Section */
+
+.download-section {
+    padding: 4rem 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-download {
+    margin: 0 auto;
+    direction: rtl;
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.first-title {
+    color: #1894FF;
+    font-size: 40px;
+}
+
+.download-app {
+    background-color: #1894FF;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 6px;
+    width: 30%;
+    cursor: pointer;
+}
+
+.download-app:focus {
+    outline: 0;
+}
+
+.joined {
+    background-color: white;
+    border: 1px solid #1894FF;
+    color: #1894FF;
+    cursor: pointer;
+    padding: 0.6rem;
+    border-radius: 6px;
+    width: 30%;
+}
+
+.joined:focus {
+    outline: 0;
+}
+
+
+/* End Download-Section */
+
+
+/* About-Darmanito */
+
+.about-darmanito {
+    display: flex;
+    padding: 3rem 10rem;
+    justify-content: space-between;
+}
+
+.texts {
+    direction: rtl;
+    padding-top: 5rem;
+    padding-right: 3rem;
+    width: 50%;
+}
+
+.about-title {
+    border-right: 4px solid #05FEA3;
+    padding-right: 0.8rem;
+    border-radius: 2px;
+    color: #0061b6;
+}
+
+.explanation {
+    width: 80%;
+    line-height: 30px;
+}
+
+.grid-container-about {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-top: 3rem;
+    justify-items: center;
+}
+
+.grid-item-about {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-grid-about {
+    padding: 1rem;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 0px 8px #7cc6e6;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-grid-about:focus {
+    outline: 0;
+}
+
+.title-btn {
+    padding-top: 1rem;
+}
+
+
+/* End About-Darmanito */
+
+
+/* Darmanito's-Possibilities  */
+
+.possibilities {
+    padding: 2rem 10rem;
+    direction: rtl;
+}
+
+.title-possibilities {
+    color: #0061b6;
+    border-right: 4px solid #05FEA3;
+    padding-right: 0.8rem;
+}
+
+.main-possibilities {
+    display: flex;
+    padding-top: 2rem;
+}
+
+.grid-container-possibilities {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.grid-item-possibilities {
+    justify-content: center;
+    display: flex;
+}
+
+.btn-grid-possibilities,
+.actived {
+    width: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0px 0px 8px #a3daf1;
+    border: none;
+    padding: 1rem 3rem;
+}
+
+.disable {
+    box-shadow: 0px 0px 8px gray;
+    color: gray;
+    opacity: 0.5;
+}
+
+.btn-grid-possibilities:focus {
+    outline: 0;
+}
+
+.btn-grid-possibilities h3 {
+    padding-top: 0.5rem;
+}
+
+.img-pos {
+    width: 60px;
+}
+
+.text-possibilities {
+    padding-right: 3rem;
+}
+
+.ex-text {
+    width: 72%;
+    line-height: 40px;
+    padding-top: 1rem;
+}
+
+.steps {
+    display: flex;
+    align-items: center;
+}
+
+.img-steps {
+    width: 5%;
+    padding: 0.5rem;
+    background-color: #c7e8f7;
+    border-radius: 30px;
+}
+
+.text-steps {
+    padding-right: 1rem;
+}
+
+.ex-steps {
+    width: 95.5%;
+    margin: 0 auto;
+    border-right: 1px solid gray;
+    padding: 1rem 3rem;
+}
+
+.img-steps-special {
+    width: 5%;
+    padding: 0.5rem;
+    background-color: #05FEA3;
+    border-radius: 30px;
+}
+
+.ex-steps-special {
+    width: 95.5%;
+    margin: 0 auto;
+    padding: 1rem 3rem;
+}
+
+
+/* End Darmanito's-Possibilities */
+
+
+/* download-App */
+
+.download-app-downside {
+    background-color: #1091ff;
+    display: flex;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.pic-section {
+    width: 50%;
+}
+
+.pic-section img {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 1rem;
+    border-radius: 45px 45px 0px 0px;
+}
+
+.num-section {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    direction: rtl;
+    padding: 6rem 5rem;
+    color: white;
+}
+
+.num-section-h3 {
+    padding-top: 1rem;
+}
+
+.form-send {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.form-send input {
+    width: 82%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    text-align: center;
+    font-size: 20px;
+}
+
+ ::placeholder {
+    font-size: 15px;
+}
+
+.form-send input:focus {
+    outline: 0;
+}
+
+.form-send button {
+    border: none;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.form-send button h4 {
+    background-color: #1091ff;
+    color: white;
+    padding: 0.7rem 2rem;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.form-send button:focus {
+    outline: 0;
+}
+
+.download-links {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.download-links a {
+    display: flex;
+    align-items: center;
+    background-color: #2162b7;
+    color: white;
+    text-decoration: none;
+    padding: 0.4rem 1rem;
+    border-radius: 9px
+}
+
+.android p {
+    padding-right: 1rem;
+}
+
+.bazzar p,
+.bazzar img {
+    padding-right: 0.5rem;
+}
+
+.sibapp p {
+    font-size: 12px;
+}
+
+.sibapp-section {
+    padding-right: 0.7rem;
+}
+
+#error {
+    padding: 1rem;
+    color: red;
+    font-size: 15px;
+    display: none;
+}
+
+#error2 {
+    padding: 1rem;
+    color: red;
+    font-size: 15px;
+    display: none;
+}
+
+
+/* End download-App */
+
+
+/* membership */
+
+.membership {
+    padding: 2rem 10rem;
+}
+
+.main-member {
+    display: flex;
+    box-shadow: 0px 0px 10px #7cc6e6;
+    border-radius: 12px;
+}
+
+.img-member {
+    width: 50%;
+}
+
+.text-member {
+    width: 65%;
+    padding-top: 2rem;
+}
+
+.img-doctor {
+    width: 400px;
+    padding: 4rem 2rem 0rem 2rem;
+}
+
+.title-member {
+    direction: rtl;
+    display: flex;
+    border-right: 2px solid #05FEA3;
+    width: 85%;
+    margin: 0 auto;
+    padding-right: 0.8rem;
+    border-radius: 3px;
+    color: #0061b6;
+}
+
+.paragrapg-member {
+    direction: rtl;
+    padding: 3rem;
+}
+
+.form-send-down {
+    display: flex;
+    justify-content: center;
+    padding: 0rem 2rem;
+    direction: rtl;
+}
+
+.form-send-down input {
+    width: 82%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(224, 224, 224);
+}
+
+ ::placeholder {
+    font-size: 15px;
+}
+
+.form-send-down input:focus {
+    outline: 0;
+}
+
+.form-send-down button {
+    border: none;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 15px 0px 0px 15px;
+    background-color: rgb(224, 224, 224);
+    width: 45%;
+}
+
+.form-send-down button p {
+    background-color: #1091ff;
+    color: white;
+    padding: 0.7rem 2rem;
+    font-size: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.form-send-down button:focus {
+    outline: 0;
+}
+
+
+/* End membership */
+
+
+/* footer */
+
+.blue-section {
+    background-color: #1091ff;
+    padding: 2rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blue-section ul {
+    list-style: none;
+}
+
+.para {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    color: white;
+}
+
+.para-li {
+    padding-right: 1.5rem;
+}
+
+.contact li p {
+    background: rgb(0, 0, 180);
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.main-footer {
+    padding: 4rem 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-ul {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-ul ul {
+    list-style-type: none;
+    text-align: end;
+}
+
+.footer-ul ul li {
+    padding-top: 1rem;
+}
+
+.footer-ul ul li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.link-actived {
+    color: #0061b6;
+    border-right: 2px solid #05FEA3;
+    padding-right: 0.5rem;
+}
+
+.link-disabled {
+    color: gray;
+}
+
+.contact-us {
+    width: 30%;
+}
+
+.contact-us h4 {
+    direction: rtl;
+    padding-top: 1rem;
+}
+
+.contact-us p {
+    direction: rtl;
+    padding-top: 1rem;
+}
+
+.contact-us .section {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-us .section p {
+    direction: rtl;
+    padding-right: 0.5rem;
+}
+
+.first {
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.second {
+    padding-top: 0.7rem;
+}
+
+.section-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section-links a {
+    padding: 0.5rem;
+    color: gray;
+}
+
+.link-footer-actived {
+    color: #0061b6;
+}
+
+.section-links a i {
+    font-size: 25px;
+}
+
+.brand-footer {
+    width: 15%;
+}
+
+.download-links-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.download-links-footer a {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 0.4rem 1rem;
+    border-radius: 9px
+}
+
+.sibapp-footer {
+    direction: rtl;
+    display: flex;
+    margin-right: 1rem;
+}
+
+.bazzar-footer {
+    direction: rtl;
+    display: flex;
+}
+
+.bazzar-footer p,
+.bazzar-footer img {
+    padding-right: 0.5rem;
+}
+
+.sibapp-footer p {
+    font-size: 12px;
+}
+
+.sibapp-section-footer {
+    padding-right: 0.7rem;
+}
+
+.title-link {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* End footer */
+
+
+/* responsive */
+
+@media(min-width:2000px) and (max-width:2560px) {
+    .navbar {
+        padding: 2rem 20rem;
+    }
+    .download-section {
+        padding: 4rem 33rem;
+    }
+    .about-darmanito {
+        justify-content: center;
+    }
+    .possibilities {
+        padding: 2rem 34rem;
+    }
+    .main-possibilities {
+        justify-content: center;
+    }
+    .num-section {
+        padding: 11rem 15rem;
+        font-size: 32px;
+    }
+    .download-links {
+        width: 90%;
+    }
+    .membership {
+        padding: 6rem 30rem;
+    }
+    .form-send-down {
+        padding: 0rem 7rem;
+    }
+    .blue-section {
+        padding: 2rem 30rem;
+    }
+    .main-footer {
+        padding: 4rem 30rem;
+    }
+}
+
+@media(max-width:1350px) {
+    .pic-section img {
+        width: 47%;
+    }
+    .num-section {
+        padding: 6rem 2rem;
+    }
+    .form-send-down {
+        padding: 0rem 1rem;
+    }
+    .main-footer {
+        padding: 4rem 3rem;
+    }
+}
+
+@media(max-width:1153px) {
+    .download-section {
+        padding: 4rem 3rem;
+    }
+    .about-darmanito {
+        padding: 3rem 3rem;
+    }
+    .possibilities {
+        padding: 2rem 3rem;
+    }
+    .pic-section {
+        width: 57%;
+    }
+    .download-links .android {
+        display: none;
+    }
+    .pic-section img {
+        width: 50%;
+    }
+    .membership {
+        padding: 2rem 3rem;
+    }
+    .blue-section {
+        padding: 2rem 3rem;
+    }
+    .main-footer {
+        padding: 4rem 1rem;
+    }
+}
+
+@media(max-width:992px) {
+    .pic-section img {
+        width: 53%;
+    }
+    .membership {
+        padding: 2rem 2rem;
+    }
+    .brand-footer {
+        width: 15%;
+        height: 55px;
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:893px) {
+    .navbar {
+        padding: 2rem 0rem;
+        font-size: 11px;
+    }
+    .download-section {
+        padding: 4rem 1rem;
+    }
+    .about-darmanito {
+        padding: 3rem 0rem;
+    }
+    .texts {
+        padding: 0rem;
+    }
+    .about-darmanito img {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+    }
+    .main-possibilities {
+        display: block;
+    }
+    .grid-container-possibilities {
+        padding: 1rem 8rem;
+    }
+    .download-links {
+        display: block;
+    }
+    .download-links a {
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+    .pic-section img {
+        width: 76%;
+    }
+    .form-send-down {
+        padding: 1rem 0.2rem;
+    }
+    .form-send-down button p {
+        font-size: 0px;
+    }
+    .blue-section {
+        padding: 2rem 0.1rem;
+    }
+}
+
+@media (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .lists {
+        position: absolute;
+        left: 0;
+        top: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 100vh;
+        width: 100%;
+        transform: translateX(-100%);
+        background-color: rgb(241, 241, 241);
+        transition: transform 0.5s ease-in;
+    }
+    .item {
+        opacity: 0;
+    }
+    .download-darmanito {
+        display: none;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    .download-section {
+        display: block;
+        padding: 4rem 0rem;
+    }
+    .download-section img {
+        display: flex;
+        margin: 0 auto;
+    }
+    .title-download {
+        width: 100%;
+        align-items: center;
+        padding-top: 2rem;
+    }
+    .title-download div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        row-gap: 10px;
+    }
+    .about-darmanito {
+        padding: 4rem 0rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about-darmanito img {
+        width: 60%;
+        display: flex;
+        margin: 0 auto;
+    }
+    .texts {
+        width: 100%;
+        padding: 1rem 3rem;
+    }
+    .grid-container-about {
+        display: none;
+    }
+    .possibilities {
+        padding: 2rem 3rem;
+    }
+    .main-possibilities {
+        display: block;
+    }
+    .grid-container-possibilities {
+        padding: 1rem 6rem;
+        grid-gap: 15px;
+        justify-content: center;
+    }
+    .img-steps {
+        width: 7%;
+    }
+    .img-steps-special {
+        width: 7%;
+    }
+    .ex-steps {
+        width: 93.5%;
+    }
+    .text-possibilities {
+        padding: 2rem 0rem;
+    }
+    .download-app-downside {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .num-section {
+        width: 100%;
+        padding: 5rem 3rem;
+    }
+    .download-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+    .download-links .android {
+        display: none;
+    }
+    .download-links a {
+        width: 36%;
+        justify-content: center;
+    }
+    .pic-section {
+        width: 100%;
+    }
+    .membership {
+        padding: 2rem 3rem;
+    }
+    .main-member {
+        display: block;
+    }
+    .img-doctor {
+        padding: 2rem 0rem;
+        display: flex;
+        margin: 0 auto;
+    }
+    .img-member {
+        width: 100%;
+    }
+    .text-member {
+        width: 100%;
+        padding: 2rem 0rem;
+    }
+    .form-send-down button p {
+        font-size: 15px;
+    }
+    .blue-section {
+        flex-direction: column-reverse;
+    }
+    .para {
+        flex-direction: column-reverse;
+        padding-bottom: 2rem
+    }
+    .para-li {
+        padding-top: 1rem;
+        padding-right: 0rem;
+    }
+    .main-footer {
+        padding: 2rem 3rem;
+    }
+    .links {
+        display: none;
+    }
+    .footer-ul {
+        display: none;
+    }
+    .contact-us {
+        width: 100%;
+    }
+    .section-links {
+        justify-content: center;
+        padding-top: 1rem;
+    }
+    .brand-footer {
+        width: 6%;
+        height: 40px;
+        margin-top: 1.5rem;
+    }
+    .item-link:hover {
+        border-right: 2px solid #05FEA3;
+        padding-right: 1rem;
+        color: #0061b6;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navlinkfade {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-4px, -6px);
+}
+
+@media(max-width:500px) {
+    .img-doctor {
+        width: 300px;
+    }
+    .download-section img {
+        width: 300px;
+    }
+    .img-steps {
+        width: 10%;
+    }
+    .img-steps-special {
+        width: 10%;
+    }
+    .ex-steps {
+        width: 90.5%;
+    }
+    .download-links a {
+        width: 70%;
+        justify-content: center;
+    }
+    .download-app {
+        width: 40%;
+    }
+    .joined {
+        width: 40%;
+    }
+    .form-send-down input {
+        width: 60%;
+    }
+}
+
+@media(max-width:400px) {
+    .img-doctor {
+        width: 220px;
+    }
+    .form-send-down button p {
+        padding: 0rem;
+        font-size: 13px;
+    }
+    .form-send-down input {
+        width: 30%;
+        height: 50px;
+    }
+    .send-massage {
+        height: 50px;
+    }
+}
+
+
+/* End responsive */
