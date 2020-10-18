@@ -139,6 +139,13 @@
     outline: 0;
 }
 
+.background-hobab {
+    position: absolute;
+    right: 50%;
+    bottom: -10%;
+    width: 68%;
+}
+
 
 /* End Download-Section */
 
@@ -437,6 +444,21 @@
     display: none;
 }
 
+.background-hobab-1 {
+    position: absolute;
+    width: 55%;
+    bottom: 1%;
+    opacity: 0.3;
+}
+
+.background-hobab-2 {
+    position: absolute;
+    width: 15%;
+    right: 0%;
+    transform: rotate(158deg);
+    opacity: 0.3
+}
+
 
 /* End download-App */
 
@@ -671,7 +693,8 @@
     color: white;
     text-decoration: none;
     padding: 0.4rem 1rem;
-    border-radius: 9px
+    border-radius: 9px;
+    width: 50%;
 }
 
 .sibapp-footer {
@@ -744,7 +767,23 @@
     .main-footer {
         padding: 4rem 30rem;
     }
+    /* .background-hobab {
+        position: absolute;
+        bottom: 34%;
+        width: 39%;
+        left: 0
+    } */
 }
+
+
+/* @media(max-width:1440px) {
+    .background-hobab {
+        position: absolute;
+        right: 54%;
+        bottom: 4%;
+        width: 53%;
+    }
+} */
 
 @media(max-width:1350px) {
     .pic-section img {
@@ -758,6 +797,26 @@
     }
     .main-footer {
         padding: 4rem 3rem;
+    }
+}
+
+@media(max-width:1261px) {
+    .possibilities {
+        padding: 2rem 5rem;
+    }
+    .brand-footer {
+        width: 13%;
+        height: 60px;
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:1200px) {
+    .download-app {
+        width: 35%;
+    }
+    .joined {
+        width: 35%;
     }
 }
 
@@ -791,6 +850,23 @@
     }
 }
 
+@media(max-width:1030px) {
+    .item {
+        padding: 0;
+    }
+    .brand-footer {
+        width: 15%;
+        height: 57px;
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:1017px) {
+    .possibilities {
+        padding: 2rem 1rem;
+    }
+}
+
 @media(max-width:992px) {
     .pic-section img {
         width: 53%;
@@ -802,6 +878,27 @@
         width: 15%;
         height: 55px;
         margin-top: 1rem;
+    }
+}
+
+@media(max-width:987px) {
+    .download-app {
+        width: 35%;
+    }
+    .joined {
+        width: 35%;
+    }
+}
+
+@media(max-width:907px) {
+    .img-steps {
+        width: 6%;
+    }
+    .img-steps-special {
+        width: 6%;
+    }
+    .ex-steps {
+        width: 94.5%;
     }
 }
 
@@ -828,7 +925,7 @@
         display: block;
     }
     .grid-container-possibilities {
-        padding: 1rem 8rem;
+        padding: 1rem 14rem;
     }
     .download-links {
         display: block;
@@ -851,6 +948,15 @@
     }
 }
 
+@media(max-width:828px) {
+    .download-app {
+        width: 45%;
+    }
+    .joined {
+        width: 45%;
+    }
+}
+
 @media (max-width:768px) {
     body {
         overflow-x: hidden;
@@ -862,7 +968,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        height: 100vh;
+        height: 80vh;
         width: 100%;
         transform: translateX(-100%);
         background-color: rgb(241, 241, 241);
@@ -1094,6 +1200,90 @@
     }
     .send-massage {
         height: 50px;
+        /* padding: 29px 1px;
+        align-items: center;
+        display: flex; */
+    }
+    .form-send button {
+        padding: 29px 1px;
+        align-items: center;
+        display: flex;
+    }
+    .form-send input {
+        width: 100%;
+    }
+    .form-send button h4 {
+        padding: 3px 10px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:350px) {
+    .img-steps {
+        width: 12%;
+    }
+    .img-steps-special {
+        width: 12%;
+    }
+    .ex-steps {
+        width: 88.5%;
+    }
+    .form-send input {
+        width: 100%;
+    }
+    .form-send button h4 {
+        padding: 3px 10px;
+        font-size: 16px;
+    }
+    .send-massage {
+        padding: 29px 1px;
+        align-items: center;
+        display: flex;
+    }
+    .joined {
+        width: 42%;
+    }
+    .brand-footer {
+        width: 14%;
+    }
+    .membership {
+        padding: 2rem 0.2rem;
+    }
+    .download-links a {
+        width: 73%;
+    }
+    .form-send-down button p {
+        padding: 4px 5px;
+    }
+    .form-send-down button {
+        width: auto;
+    }
+    .form-send-down input {
+        width: 54%;
+    }
+}
+
+@media(max-width:280px) {
+    .joined {
+        width: 48%;
+    }
+    .download-app {
+        width: 48%;
+    }
+    .texts {
+        padding: 1rem 0.5rem;
+    }
+    .grid-container-possibilities {
+        grid-template-columns: auto;
+    }
+    .possibilities {
+        padding: 2rem 0rem;
+    }
+    .form-send input {
+        width: 200px;
+    }
+    .download-links a {
+        width: 110%;
     }
 }
 
