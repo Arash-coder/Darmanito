@@ -1,0 +1,772 @@
+@font-face {
+    src: url("../../fonts/Yekan.ttf");
+    font-family: Yekan;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Yekan;
+}
+
+
+/* footer */
+
+.blue-section {
+    background-color: #1091ff;
+    padding: 1.4rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blue-section ul {
+    list-style: none;
+}
+
+.para {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    color: white;
+    margin: 0;
+}
+
+.para-li {
+    padding-right: 1.5rem;
+}
+
+.contact {
+    margin: 0;
+}
+
+.contact li p {
+    background: rgb(0, 0, 180);
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.main-footer {
+    padding: 4rem 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-ul {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-ul ul {
+    list-style-type: none;
+    text-align: end;
+}
+
+.footer-ul ul li {
+    padding-top: 1rem;
+}
+
+.footer-ul ul li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.link-actived {
+    color: #0061b6;
+    border-right: 2px solid #05FEA3;
+    padding-right: 0.5rem;
+}
+
+.link-disabled {
+    color: gray;
+}
+
+.contact-us {
+    width: 30%;
+}
+
+.contact-us p {
+    direction: rtl;
+    padding-top: 1rem;
+    margin: 0;
+    font-weight: 800;
+}
+
+.contact-us p {
+    direction: rtl;
+    padding-top: 1rem;
+}
+
+.contact-us .section {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-us .section p {
+    direction: rtl;
+    padding-right: 0.5rem;
+}
+
+.first {
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.second {
+    padding-top: 0.7rem;
+}
+
+.section-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section-links a {
+    padding: 0.5rem;
+    color: gray;
+}
+
+.link-footer-actived {
+    color: #0061b6;
+}
+
+.section-links a i {
+    font-size: 25px;
+}
+
+.brand-footer {
+    width: 15%;
+    height: 55px;
+    margin-top: 1rem;
+}
+
+.download-links-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.download-links-footer a {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 0.4rem 1rem;
+    border-radius: 9px;
+    width: 50%;
+}
+
+.sibapp-footer {
+    direction: rtl;
+    display: flex;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.bazzar-footer {
+    direction: rtl;
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.bazzar-footer p,
+.bazzar-footer img {
+    padding-right: 0.5rem;
+}
+
+.sibapp-footer p {
+    font-size: 12px;
+}
+
+.sibapp-section-footer {
+    padding-right: 0.7rem;
+}
+
+.title-link {
+    display: flex;
+    justify-content: center;
+}
+
+.txt__title {
+    font-weight: 900;
+}
+
+.txt__title2 {
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.psg {
+    font-weight: 800;
+}
+
+
+/* End footer */
+
+
+/* responsive */
+
+@media(min-width:2000px) and (max-width:2560px) {
+    .navbar {
+        padding: 2rem 20rem;
+    }
+    .download-section {
+        padding: 4rem 33rem;
+    }
+    .about-darmanito {
+        justify-content: center;
+    }
+    .possibilities {
+        padding: 2rem 34rem;
+    }
+    .main-possibilities {
+        justify-content: center;
+    }
+    .num-section {
+        padding: 11rem 15rem;
+        font-size: 32px;
+    }
+    .download-links {
+        width: 90%;
+    }
+    .membership {
+        padding: 6rem 30rem;
+    }
+    .form-send-down {
+        padding: 0rem 7rem;
+    }
+    .blue-section {
+        padding: 2rem 30rem;
+    }
+    .main-footer {
+        padding: 4rem 30rem;
+    }
+    /* .background-hobab {
+        position: absolute;
+        bottom: 34%;
+        width: 39%;
+        left: 0
+    } */
+}
+
+
+/* @media(max-width:1440px) {
+    .background-hobab {
+        position: absolute;
+        right: 54%;
+        bottom: 4%;
+        width: 53%;
+    }
+} */
+
+@media(max-width:1350px) {
+    .pic-section img {
+        width: 47%;
+    }
+    .num-section {
+        padding: 6rem 2rem;
+    }
+    .form-send-down {
+        padding: 0rem 1rem;
+    }
+    .main-footer {
+        padding: 4rem 3rem;
+    }
+}
+
+@media(max-width:1261px) {
+    .possibilities {
+        padding: 2rem 5rem;
+    }
+    .brand-footer {
+        width: 13%;
+        height: 60px;
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:1200px) {
+    .download-app {
+        width: 35%;
+    }
+    .joined {
+        width: 35%;
+    }
+}
+
+@media(max-width:1153px) {
+    .download-section {
+        padding: 4rem 3rem;
+    }
+    .about-darmanito {
+        padding: 3rem 3rem;
+    }
+    .possibilities {
+        padding: 2rem 3rem;
+    }
+    .pic-section {
+        width: 57%;
+    }
+    .download-links .android {
+        display: none;
+    }
+    .pic-section img {
+        width: 50%;
+    }
+    .membership {
+        padding: 2rem 3rem;
+    }
+    .blue-section {
+        padding: 2rem 3rem;
+    }
+    .main-footer {
+        padding: 4rem 1rem;
+    }
+}
+
+@media(max-width:1030px) {
+    .item {
+        padding: 0;
+    }
+    .brand-footer {
+        width: 15%;
+        height: 57px;
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:1017px) {
+    .possibilities {
+        padding: 2rem 1rem;
+    }
+}
+
+@media(max-width:992px) {
+    .pic-section img {
+        width: 53%;
+    }
+    .membership {
+        padding: 2rem 2rem;
+    }
+    .brand-footer {
+        width: 15%;
+        height: 55px;
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:987px) {
+    .download-app {
+        width: 35%;
+    }
+    .joined {
+        width: 35%;
+    }
+}
+
+@media(max-width:907px) {
+    .img-steps {
+        width: 6%;
+    }
+    .img-steps-special {
+        width: 6%;
+    }
+    .ex-steps {
+        width: 94.5%;
+    }
+}
+
+@media(max-width:893px) {
+    .navbar {
+        padding: 2rem 0rem;
+        font-size: 11px;
+    }
+    .download-section {
+        padding: 4rem 1rem;
+    }
+    .about-darmanito {
+        padding: 3rem 0rem;
+    }
+    .texts {
+        padding: 0rem;
+    }
+    .about-darmanito img {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+    }
+    .main-possibilities {
+        display: block;
+    }
+    .grid-container-possibilities {
+        padding: 1rem 14rem;
+    }
+    .download-links {
+        display: block;
+    }
+    .download-links a {
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+    .pic-section img {
+        width: 76%;
+    }
+    .form-send-down {
+        padding: 1rem 0.2rem;
+    }
+    .form-send-down button p {
+        font-size: 0px;
+    }
+    .blue-section {
+        padding: 2rem 0.1rem;
+    }
+}
+
+@media(max-width:828px) {
+    .download-app {
+        width: 45%;
+    }
+    .joined {
+        width: 45%;
+    }
+}
+
+@media (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .lists {
+        position: absolute;
+        left: 0;
+        top: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 80vh;
+        width: 100%;
+        transform: translateX(-100%);
+        background-color: rgb(241, 241, 241);
+        transition: transform 0.5s ease-in;
+    }
+    .item {
+        opacity: 0;
+    }
+    .download-darmanito {
+        display: none;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    .download-section {
+        display: block;
+        padding: 4rem 0rem;
+    }
+    .download-section img {
+        display: flex;
+        margin: 0 auto;
+    }
+    .title-download {
+        width: 100%;
+        align-items: center;
+        padding-top: 2rem;
+    }
+    .title-download div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        row-gap: 10px;
+    }
+    .about-darmanito {
+        padding: 4rem 0rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about-darmanito img {
+        width: 60%;
+        display: flex;
+        margin: 0 auto;
+    }
+    .texts {
+        width: 100%;
+        padding: 1rem 3rem;
+    }
+    .grid-container-about {
+        display: none;
+    }
+    .possibilities {
+        padding: 2rem 3rem;
+    }
+    .main-possibilities {
+        display: block;
+    }
+    .grid-container-possibilities {
+        padding: 1rem 6rem;
+        grid-gap: 15px;
+        justify-content: center;
+    }
+    .img-steps {
+        width: 7%;
+    }
+    .img-steps-special {
+        width: 7%;
+    }
+    .ex-steps {
+        width: 93.5%;
+    }
+    .text-possibilities {
+        padding: 2rem 0rem;
+    }
+    .download-app-downside {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .num-section {
+        width: 100%;
+        padding: 5rem 3rem;
+    }
+    .download-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+    .download-links .android {
+        display: none;
+    }
+    .download-links a {
+        width: 36%;
+        justify-content: center;
+    }
+    .pic-section {
+        width: 100%;
+    }
+    .membership {
+        padding: 2rem 3rem;
+    }
+    .main-member {
+        display: block;
+    }
+    .img-doctor {
+        padding: 2rem 0rem;
+        display: flex;
+        margin: 0 auto;
+    }
+    .img-member {
+        width: 100%;
+    }
+    .text-member {
+        width: 100%;
+        padding: 2rem 0rem;
+    }
+    .form-send-down button p {
+        font-size: 15px;
+    }
+    .blue-section {
+        flex-direction: column-reverse;
+    }
+    .para {
+        flex-direction: column-reverse;
+        padding-bottom: 2rem
+    }
+    .para-li {
+        padding-top: 1rem;
+        padding-right: 0rem;
+    }
+    .main-footer {
+        padding: 2rem 3rem;
+    }
+    .links {
+        display: none;
+    }
+    .footer-ul {
+        display: none;
+    }
+    .contact-us {
+        width: 100%;
+    }
+    .section-links {
+        justify-content: center;
+        padding-top: 1rem;
+    }
+    .brand-footer {
+        width: 6%;
+        height: 40px;
+        margin-top: 1.5rem;
+    }
+    .item-link:hover {
+        border-right: 2px solid #05FEA3;
+        padding-right: 1rem;
+        color: #0061b6;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navlinkfade {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-4px, -6px);
+}
+
+@media(max-width:500px) {
+    .img-doctor {
+        width: 300px;
+    }
+    .download-section img {
+        width: 300px;
+    }
+    .img-steps {
+        width: 10%;
+    }
+    .img-steps-special {
+        width: 10%;
+    }
+    .ex-steps {
+        width: 90.5%;
+    }
+    .download-links a {
+        width: 70%;
+        justify-content: center;
+    }
+    .download-app {
+        width: 40%;
+    }
+    .joined {
+        width: 40%;
+    }
+    .form-send-down input {
+        width: 60%;
+    }
+}
+
+@media(max-width:400px) {
+    .img-doctor {
+        width: 220px;
+    }
+    .form-send-down button p {
+        padding: 0rem;
+        font-size: 13px;
+    }
+    .form-send-down input {
+        width: 30%;
+        height: 50px;
+    }
+    .send-massage {
+        height: 50px;
+        /* padding: 29px 1px;
+        align-items: center;
+        display: flex; */
+    }
+    .form-send button {
+        padding: 29px 1px;
+        align-items: center;
+        display: flex;
+    }
+    .form-send input {
+        width: 100%;
+    }
+    .form-send button h4 {
+        padding: 3px 10px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:350px) {
+    .img-steps {
+        width: 12%;
+    }
+    .img-steps-special {
+        width: 12%;
+    }
+    .ex-steps {
+        width: 88.5%;
+    }
+    .form-send input {
+        width: 100%;
+    }
+    .form-send button h4 {
+        padding: 3px 10px;
+        font-size: 16px;
+    }
+    .send-massage {
+        padding: 29px 1px;
+        align-items: center;
+        display: flex;
+    }
+    .joined {
+        width: 42%;
+    }
+    .brand-footer {
+        width: 14%;
+    }
+    .membership {
+        padding: 2rem 0.2rem;
+    }
+    .download-links a {
+        width: 73%;
+    }
+    .form-send-down button p {
+        padding: 4px 5px;
+    }
+    .form-send-down button {
+        width: auto;
+    }
+    .form-send-down input {
+        width: 54%;
+    }
+}
+
+@media(max-width:280px) {
+    .joined {
+        width: 48%;
+    }
+    .download-app {
+        width: 48%;
+    }
+    .texts {
+        padding: 1rem 0.5rem;
+    }
+    .grid-container-possibilities {
+        grid-template-columns: auto;
+    }
+    .possibilities {
+        padding: 2rem 0rem;
+    }
+    .form-send input {
+        width: 200px;
+    }
+    .download-links a {
+        width: 110%;
+    }
+}
+
+
+/* End responsive */

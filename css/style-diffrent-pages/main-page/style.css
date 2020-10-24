@@ -1,5 +1,5 @@
 @font-face {
-    src: url("../fonts/Yekan.ttf");
+    src: url("../../../fonts/Yekan.ttf");
     font-family: Yekan;
 }
 
@@ -678,6 +678,8 @@
 
 .brand-footer {
     width: 15%;
+    height: 55px;
+    margin-top: 1rem;
 }
 
 .download-links-footer {

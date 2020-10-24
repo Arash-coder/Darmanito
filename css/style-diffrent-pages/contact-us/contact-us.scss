@@ -1,0 +1,94 @@
+@font-face {
+    src: url("../../../fonts/Yekan.ttf");
+    font-family: yekan;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: yekan;
+}
+
+.span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container-fluid {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #1091ff;
+    padding: 2rem 0rem;
+}
+
+.input {
+    width: 70%;
+    border-radius: 6px;
+    border: 1px solid;
+    padding-right: 1rem;
+    margin-top: 1rem;
+}
+
+.input:focus {
+    outline: 0;
+}
+
+.submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    .btn__submit {
+        width: 70%;
+        color: white;
+        border: none;
+        background-color: #1091ff;
+        padding: 0.5rem 0rem;
+        border-radius: 10px;
+    }
+}
+
+.txt-area {
+    resize: none;
+}
+
+.title {
+    margin-top: 1rem;
+}
+
+.photo {
+    width: 100%;
+    position: absolute;
+}
+
+.txts {
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    top: 125px;
+    left: 18px;
+    border-radius: 20px;
+}
+
+.blue {
+    color: #1091ff;
+}
+
+.row__regis {
+    margin-top: 2rem;
+}
+
+.spci {
+    margin-bottom: 1rem;
+}
+
+@media(max-width:768px) {
+    .spci {
+        margin-top: 12rem;
+    }
+}

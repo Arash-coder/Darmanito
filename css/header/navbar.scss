@@ -1,0 +1,175 @@
+@font-face {
+    src: url("../fonts/Yekan.ttf");
+    font-family: Yekan;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Yekan;
+}
+
+.navbar__boot,
+.lists,
+.icon-brand {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar__boot {
+    padding: 2rem 1rem;
+    align-items: center;
+}
+
+.download-btn__boot {
+    background-color: #E6F3FF;
+    color: #1894FF;
+    width: 155px;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.download-btn__boot:focus {
+    outline: 0;
+}
+
+.lists {
+    list-style: none;
+}
+
+.item {
+    padding: 0rem 2rem;
+}
+
+.item {
+    .item-link {
+        text-decoration: none;
+    }
+}
+
+.item-link {
+    text-decoration: none;
+    color: #0061b6;
+    font-size: 20px;
+    padding-right: 1rem;
+}
+
+.main-title {
+    direction: rtl;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    margin: 0;
+}
+
+.big-title {
+    font-size: 18px;
+}
+
+.small-title {
+    font-size: 15px;
+}
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: #1894FF;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.burger {
+    display: none;
+}
+
+.image-brand {
+    width: 45px;
+}
+
+
+/* End Header */
+
+
+/* responsive */
+
+@media(min-width:2000px) and (max-width:2560px) {
+    .navbar__boot {
+        padding: 2rem 20rem;
+    }
+}
+
+@media(max-width:1030px) {
+    .item {
+        padding: 0;
+    }
+}
+
+@media(max-width:893px) {
+    .navbar__boot {
+        padding: 2rem 0rem;
+        font-size: 11px;
+    }
+}
+
+@media (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .lists {
+        position: absolute;
+        left: 0;
+        top: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 80vh;
+        width: 100%;
+        transform: translateX(-100%);
+        background-color: rgb(241, 241, 241);
+        transition: transform 0.5s ease-in;
+        z-index: 1;
+    }
+    .item {
+        opacity: 0;
+    }
+    .download-darmanito {
+        display: none;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navlinkfade {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-4px, -6px);
+}
+
+
+/* End responsive */
