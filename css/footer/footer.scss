@@ -42,11 +42,20 @@
     margin: 0;
 }
 
-.contact li p {
+.contact li .support-num {
     background: rgb(0, 0, 180);
     color: white;
-    padding: 1rem;
-    border-radius: 15px;
+    display: flex;
+    padding: 1rem 1rem;
+    align-items: center;
+    border-radius: 10px;
+    p {
+        margin: 0;
+    }
+    img {
+        padding-left: 1rem;
+        width: 40px;
+    }
 }
 
 .main-footer {

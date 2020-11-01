@@ -26,7 +26,7 @@
 
 <body>
     <!-- Header -->
-    <header class="header__boot">
+    <header id="header" class="header__boot">
         <!-- Navbar -->
         <nav class="navbar__boot">
             <div class="burger">
@@ -57,6 +57,9 @@
                     <a class="item-link" href="../index.html">
                         صفحه اصلی    
                     </a>
+                </li>
+                <li class="item item-speci">
+                    <a class="item-link item-link-speci" href="#">دانلود درمانیتو</a>
                 </li>
             </ul>
             <ul class="icon-brand">
@@ -129,164 +132,168 @@
                     با ثبت نام به عنوان داروخانه یا فروشگاه و داروخانه شماهم به سیستم درمان کمک کنید و به هزاران کاربر خدمات ارئه بدین و روزانه درآمد سفارش های خودتون رو تسویه کنید
                 </p>
                 <div class="container__txt__num text-right">
-                    <input type="text" class="text-right container__txt__num__input" placeholder="شماره همراه را وارد کنید ">
-                    <button class="container__txt__num__btn text-right">
-                        <p class="container__txt__num__btn__para">ثبت نام سریع</p>
+                    <input style="font-family: 'Courier New', Courier, monospace;" id="inputnum" type="text " class="text-right container__txt__num__input " placeholder="شماره همراه را وارد کنید ">
+                    <button id="tbnsub" class="container__txt__num__btn text-right ">
+                        <p class="container__txt__num__btn__para ">ثبت نام سریع</p>
                     </button>
                 </div>
+                <div id="error" class="error text-right "></div>
             </div>
         </div>
     </div>
     <!-- End admin -->
     <!-- blue-section -->
-    <div class="container-fluid">
-        <div class="row container__row">
-            <div class="col-xl-4 col-lg-4 col-md-4 container__item">
-                <h5 class="container__item__title">تعداد داروخانه و مراکز</h5>
-                <h2 class="container__item__number">+120,000</h2>
+    <div class="container-fluid ">
+        <div class="row container__row ">
+            <div class="col-xl-4 col-lg-4 col-md-4 container__item ">
+                <h5 class="container__item__title ">تعداد داروخانه و مراکز</h5>
+                <h2 class="container__item__number ">+120,000</h2>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 container__item">
-                <h5 class="container__item__title">تعداد داروخانه و مراکز</h5>
-                <h2 class="container__item__number">+120,000</h2>
+            <div class="col-xl-4 col-lg-4 col-md-4 container__item ">
+                <h5 class="container__item__title ">تعداد داروخانه و مراکز</h5>
+                <h2 class="container__item__number ">+120,000</h2>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 container__item">
-                <h5 class="container__item__title">تعداد کاربران درمانیتو</h5>
-                <h2 class="container__item__number">+120,000</h2>
+            <div class="col-xl-4 col-lg-4 col-md-4 container__item ">
+                <h5 class="container__item__title ">تعداد کاربران درمانیتو</h5>
+                <h2 class="container__item__number ">+120,000</h2>
             </div>
         </div>
     </div>
     <!-- End blue-section -->
     <!-- service -->
-    <div class="container">
-        <h2 class="service__title text-right">در درمانیتو چه خدمات ارئه خواهید داد؟</h2>
-        <h5 class="service__desc text-right">خدمت مورد نظر خود را برای ثبت نام انتخاب کنید</h5>
-        <div class="row service__row">
-            <div class="service__item col-xl-4 col-lg-4 col-md-4">
-                <div class="service__item__pic">
-                    <img class="service__item__pic__img" src="../images/cosmetic.png" alt="cosmetic">
+    <div class="container ">
+        <h2 class="service__title text-right ">در درمانیتو چه خدمات ارئه خواهید داد؟</h2>
+        <h5 class="service__desc text-right ">خدمت مورد نظر خود را برای ثبت نام انتخاب کنید</h5>
+        <div class="row service__row ">
+            <div class="service__item col-xl-4 col-lg-4 col-md-4 ">
+                <div class="service__item__pic ">
+                    <img class="service__item__pic__img " src="../images/cosmetic.png " alt="cosmetic ">
                 </div>
-                <div class="service__item__txt">
-                    <h5 class="service__item__txt__title text-right">فروشگاه آرایشی و بهداشتی</h5>
-                    <p class="service__item__txt__desc text-right">مایل هستم فقط به عنوان داروخانه فعالیت کنم و در بخش صرفا سفارش دارو با عکس نسخه به بیماران کمک رسانی کنم</p>
-                    <button class="service__item__txt__btn">ثبت نام</button>
+                <div class="service__item__txt ">
+                    <h5 class="service__item__txt__title text-right ">فروشگاه آرایشی و بهداشتی</h5>
+                    <p class="service__item__txt__desc text-right ">مایل هستم فقط به عنوان داروخانه فعالیت کنم و در بخش صرفا سفارش دارو با عکس نسخه به بیماران کمک رسانی کنم</p>
+                    <button class="service__item__txt__btn ">ثبت نام</button>
                 </div>
             </div>
-            <div class="service__item col-xl-4 col-lg-4 col-md-4">
-                <div class="service__item__pic">
-                    <img class="service__item__pic__img" src="../images/health.png" alt="health">
+            <div class="service__item col-xl-4 col-lg-4 col-md-4 ">
+                <div class="service__item__pic ">
+                    <img class="service__item__pic__img " src="../images/health.png " alt="health ">
                 </div>
-                <div class="service__item__txt">
-                    <h5 class="service__item__txt__title text-right">داروخانه</h5>
-                    <p class="service__item__txt__desc text-right">مایل هستم فقط به عنوان داروخانه فعالیت کنم و در بخش صرفا سفارش دارو با عکس نسخه به بیماران کمک رسانی کنم</p>
-                    <button class="service__item__txt__btn">ثبت نام</button>
+                <div class="service__item__txt ">
+                    <h5 class="service__item__txt__title text-right ">داروخانه</h5>
+                    <p class="service__item__txt__desc text-right ">مایل هستم فقط به عنوان داروخانه فعالیت کنم و در بخش صرفا سفارش دارو با عکس نسخه به بیماران کمک رسانی کنم</p>
+                    <button class="service__item__txt__btn ">ثبت نام</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- End service -->
     <!-- footer -->
-    <footer class="footer diactived">
-        <div class="blue-section">
-            <ul class="contact">
+    <footer class="footer diactived ">
+        <div class="blue-section ">
+            <ul class="contact ">
                 <li>
-                    <p>پشتیبانی:44444444-021</p>
+                    <div class="support-num ">
+                        <p>پشتیبانی:44444444-021</p>
+                        <img src="../images/88.png" alt="support">
+                    </div>
                 </li>
             </ul>
-            <ul class="para">
-                <li class="para-li">
-                    <p class="txt__title">
+            <ul class="para ">
+                <li class="para-li ">
+                    <p class="txt__title ">
                         پاسخگویی در روز های کاری از 9 صبح تا 9 شب
                     </p>
                 </li>
                 <li>
-                    <p class="txt__title2">
+                    <p class="txt__title2 ">
                         پشتیبانی درمانیتو
                     </p>
                 </li>
             </ul>
         </div>
-        <div class="main-footer text-right">
-            <div class="links">
-                <h3 class="title-link">دانلود درمانیتو
+        <div class="main-footer text-right ">
+            <div class="links ">
+                <h3 class="title-link ">دانلود درمانیتو
                 </h3>
-                <section class="download-links-footer">
-                    <a class="sibapp-footer" href="#">
-                        <img src="../images/sib app logo.svg" alt="sibApp-logo">
-                        <section class="sibapp-section-footer">
+                <section class="download-links-footer ">
+                    <a class="sibapp-footer " href="# ">
+                        <img src="../images/sib app logo.svg " alt="sibApp-logo ">
+                        <section class="sibapp-section-footer ">
                             <p>دریافت نسخه ios از </p>
-                            <img src="../images/sib app text.svg" alt="sibApp-logo">
+                            <img src="../images/sib app text.svg " alt="sibApp-logo ">
                         </section>
                     </a>
-                    <a class="bazzar-footer" href="#">
+                    <a class="bazzar-footer " href="# ">
                         <p>دریافت از</p>
-                        <img src="../images/bazzar text.svg" alt="bazzar-text">
-                        <img src="../images/bazzar logo.svg" alt="bazzar-logo">
+                        <img src="../images/bazzar text.svg " alt="bazzar-text ">
+                        <img src="../images/bazzar logo.svg " alt="bazzar-logo ">
                     </a>
                 </section>
             </div>
-            <div class="footer-ul">
-                <ul class="pages">
+            <div class="footer-ul ">
+                <ul class="pages ">
                     <li>
-                        <p class="psg">صفحات درمانیتو</p>
+                        <p class="psg ">صفحات درمانیتو</p>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="# ">
                             تماس با ما 
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="# ">
                             درباره ما 
                         </a>
                     </li>
                     <li>
-                        <a href="#">سوالات متداول</a>
+                        <a href="# ">سوالات متداول</a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="# ">
                             قوانین و شرایط
                         </a>
                     </li>
                 </ul>
-                <ul class="services">
+                <ul class="services ">
                     <li>
-                        <p class="psg">خدمات درمانیتو</p>
+                        <p class="psg ">خدمات درمانیتو</p>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="# ">
                            داروخانه آنلاین
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="# ">
                             فروشکاه آنلاین 
                         </a>
                     </li>
                     <li>
-                        <a href="#">ویزیت آنلاین</a>
+                        <a href="# ">ویزیت آنلاین</a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="# ">
                            پرونده پزشکی
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="contact-us">
-                <section class="section">
-                    <p><span class="first">درمانیتو</span><br><span class="second">همراه شما در زمان</span></p>
-                    <img class="brand-footer" src="../images/brand.png" alt="brand-darmanito">
+            <div class="contact-us ">
+                <section class="section ">
+                    <p><span class="first ">درمانیتو</span><br><span class="second ">همراه شما در زمان</span></p>
+                    <img class="brand-footer " src="../images/brand.png " alt="brand-darmanito ">
                 </section>
                 <p>سوپر اپلیکیشن حوزه درمان و سلامت </p>
                 <p>تمام حقوق مادی و معنوی این وبسایت متعلق به درمانیتو است</p>
-                <section class="section-links">
-                    <a href="#">
+                <section class="section-links ">
+                    <a href="# ">
                         <i class='fab fa-instagram'></i>
                     </a>
-                    <a href="#">
+                    <a href="# ">
                         <i class='fab fa-twitter'></i>
                     </a>
-                    <a href="#">
+                    <a href="# ">
                         <i class='fab fa-linkedin-in'></i>
                     </a>
                 </section>
@@ -294,7 +301,8 @@
         </div>
     </footer>
     <!-- End footer -->
-    <script src="../js/script-2.js"></script>
+    <script src="../js/script-2.js "></script>
+    <script src="../js/valid-num.js "></script>
 </body>
 
 </html>

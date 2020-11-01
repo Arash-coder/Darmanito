@@ -25,7 +25,7 @@
 
 <body>
     <!-- Header -->
-    <header class="header__boot">
+    <header id="header" class="header__boot">
         <!-- Navbar -->
         <nav class="navbar__boot">
             <div class="burger">
@@ -56,6 +56,9 @@
                     <a class="item-link" href="../index.html">
                         صفحه اصلی    
                     </a>
+                </li>
+                <li class="item item-speci">
+                    <a class="item-link item-link-speci" href="#">دانلود درمانیتو</a>
                 </li>
             </ul>
             <ul class="icon-brand">
@@ -101,18 +104,20 @@
                     <form>
                         <div>
                             <div class="title"> نام و نام خوانوادگی</div>
-                            <input class="input text-right" type="text" placeholder="نام و نام خانوادگی" required>
+                            <input id="f1" class="input text-right" type="text" placeholder="نام و نام خانوادگی" required>
+                            <div class="error text-right" id="error1"></div>
                         </div>
                         <div>
                             <div class="title">ایمیل یا شماره همراه</div>
-                            <input class="input text-right" type="email" placeholder="ایمیل یا شماره همراه" required>
+                            <input id="f2" class="input text-right" type="email" placeholder="ایمیل یا شماره همراه" required>
+                            <div class="error text-right" id="error2"></div>
                         </div>
                         <div>
                             <div class="title">پیام شما</div>
                             <textarea class="input text-right txt-area" placeholder="پیام شما" cols="30" rows="10" required></textarea>
                         </div>
                         <div class="submit">
-                            <button class="btn__submit">ارسال پیام</button>
+                            <button id="btnf" class="btn__submit">ارسال پیام</button>
                         </div>
                     </form>
                 </div>
@@ -125,7 +130,10 @@
         <div class="blue-section">
             <ul class="contact">
                 <li>
-                    <p>پشتیبانی:44444444-021</p>
+                    <div class="support-num ">
+                        <p>پشتیبانی:44444444-021</p>
+                        <img src="../images/88.png" alt="support">
+                    </div>
                 </li>
             </ul>
             <ul class="para">
@@ -231,6 +239,7 @@
     </footer>
     <!-- End footer -->
     <script src="../js/script-2.js"></script>
+    <script src="../js/contact-us.js"></script>
 </body>
 
 </html>

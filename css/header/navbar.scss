@@ -89,6 +89,10 @@
     width: 45px;
 }
 
+.item-speci {
+    display: none;
+}
+
 
 /* End Header */
 
@@ -117,6 +121,22 @@
 @media (max-width:768px) {
     body {
         overflow-x: hidden;
+    }
+    .header-animate {
+        animation-name: navcolor;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    .item-speci {
+        background-color: #91caff;
+        color: #1894FF;
+    }
+    .item-link-speci {
+        padding: 1rem 2rem;
+        display: block;
+    }
+    .item-speci {
+        display: block;
     }
     .lists {
         position: absolute;
@@ -169,6 +189,12 @@
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-4px, -6px);
+}
+
+@keyframes navcolor {
+    to {
+        background-color: rgb(241, 241, 241);
+    }
 }
 
 

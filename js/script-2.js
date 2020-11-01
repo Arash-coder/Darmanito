@@ -5,6 +5,7 @@ const navSlide = () => {
 
 
     burger.addEventListener('click', () => {
+        header.classList.toggle('header-animate');
         nav.classList.toggle('nav-active');
         navlinks.forEach((link, index) => {
             if (link.style.animation) {

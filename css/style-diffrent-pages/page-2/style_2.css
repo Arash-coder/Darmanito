@@ -373,6 +373,9 @@
   .cardd {
     width: 92%;
   }
+  .hostel {
+    width: 96px;
+  }
 }
 
 @media (max-width: 510px) {
@@ -399,5 +402,13 @@
   .container__txt__num__btn {
     width: 40%;
   }
+}
+
+.container__txt__num__input {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.error {
+  color: red;
 }
 /*# sourceMappingURL=style_2.css.map */

@@ -271,6 +271,9 @@
         .cardd {
             width: 92%;
         }
+        .hostel {
+            width: 96px;
+        }
     }
     
     @media(max-width:510px) {
@@ -293,6 +296,14 @@
                 width: 40%;
             }
         }
+    }
+    
+    .container__txt__num__input {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .error {
+        color: red;
     }
     
     // End responsive

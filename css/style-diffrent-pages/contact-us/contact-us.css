@@ -32,9 +32,9 @@
 }
 
 .input {
-  width: 70%;
+  width: 90%;
   border-radius: 6px;
-  border: 1px solid;
+  border: 0.5px solid gray;
   padding-right: 1rem;
   margin-top: 1rem;
 }
@@ -54,7 +54,7 @@
 }
 
 .submit .btn__submit {
-  width: 70%;
+  width: 90%;
   color: white;
   border: none;
   background-color: #1091ff;
@@ -89,6 +89,8 @@
   top: 125px;
   left: 18px;
   border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px black;
+          box-shadow: 0px 0px 10px black;
 }
 
 .blue {
@@ -107,5 +109,18 @@
   .spci {
     margin-top: 12rem;
   }
+}
+
+@media (max-width: 440px) {
+  .txts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.error {
+  color: red;
 }
 /*# sourceMappingURL=contact-us.css.map */

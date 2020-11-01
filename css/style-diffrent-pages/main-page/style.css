@@ -85,6 +85,10 @@
     width: 45px;
 }
 
+.item-speci {
+    display: none;
+}
+
 
 /* End Header */
 
@@ -582,11 +586,22 @@
     padding-right: 1.5rem;
 }
 
-.contact li p {
+.contact li .support-num {
     background: rgb(0, 0, 180);
     color: white;
-    padding: 1rem;
-    border-radius: 15px;
+    display: flex;
+    padding: 1rem 1rem;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.contact li .support-num p {
+    margin: 0;
+}
+
+.contact li .support-num img {
+    padding-left: 1rem;
+    width: 40px;
 }
 
 .main-footer {
@@ -963,6 +978,21 @@
     body {
         overflow-x: hidden;
     }
+    .header-animate {
+        animation-name: navcolor;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    .item-speci {
+        background-color: #91caff;
+        color: #1894FF;
+    }
+    .item-link-speci {
+        padding: 1rem 2rem;
+    }
+    .item-speci {
+        display: block;
+    }
     .lists {
         position: absolute;
         left: 0;
@@ -1286,6 +1316,12 @@
     }
     .download-links a {
         width: 110%;
+    }
+}
+
+@keyframes navcolor {
+    to {
+        background-color: rgb(241, 241, 241);
     }
 }
 
