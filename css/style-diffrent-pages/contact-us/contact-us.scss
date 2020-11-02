@@ -20,7 +20,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: #1091ff;
+    background-color: $background-color;
     padding: 2rem 0rem;
 }
 
@@ -44,7 +44,7 @@
         width: 90%;
         color: white;
         border: none;
-        background-color: #1091ff;
+        background-color: $color;
         padding: 0.5rem 0rem;
         border-radius: 10px;
     }
@@ -77,7 +77,7 @@
 }
 
 .blue {
-    color: #1091ff;
+    color: $color;
 }
 
 .row__regis {
@@ -103,3 +103,11 @@
 .error {
     color: red;
 }
+
+@mixin cemter {
+    display: flex;
+    justify-content: center;
+}
+
+$color:#1091ff;
+$background-color:#1091ff;
